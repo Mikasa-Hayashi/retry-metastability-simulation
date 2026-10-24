@@ -6,5 +6,5 @@ authors:
     given-names: "Иван Денисович"
     affiliation: "Волгоградский государственный технический университет"
 license: MIT
-repository-code: "[URL ПОСЛЕ ПУБЛИКАЦИИ]"
+repository-code: "https://github.com/Mikasa-Hayashi/retry-metastability-simulation"
 doi: "[DOI ZENODO ПОСЛЕ ЗАГРУЗКИ]"
