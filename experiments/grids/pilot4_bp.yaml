@@ -1,0 +1,18 @@
+# Часть 4, п. 2б (эксплораторно): протокол B' с перегрузкой ρ = 2,6 (глубже любого ρ_test <= 2,5), только B
+# R1-R3 x Q x D x S{Exp, LogN}; ρ = 0,20-1,00 шаг 0,05, 1,05, 1,1-2,5 шаг 0,1; 40 реплик (общий блок)
+stage: pilot
+tag: p4_bp
+seed_mode: crn
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0, proto.overload_rho: 2.6}
+sweep:
+  R: [R1, R2, R3]
+  Q: [FIFO, LIFO, ALIFO]
+  D: ["off", "on"]
+  S: [Exp, LogN]
+rho_parts:
+  - {start: 0.20, stop: 1.00, step: 0.05}
+  - {start: 1.05, stop: 1.05, step: 0.05}
+  - {start: 1.10, stop: 2.50, step: 0.10}
+protocols: [B]
+replicates: 40

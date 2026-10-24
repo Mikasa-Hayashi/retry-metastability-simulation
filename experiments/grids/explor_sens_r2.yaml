@@ -1,0 +1,16 @@
+# Эксплораторно (В6): чувствительность R2 к длине пауз. Паузы n-го повтора = U * min(cap, base * mult^(n-1)):
+# base = 2,0 (вдвое длиннее) и 0,5 (вдвое короче), cap = 16 и mult = 2 не меняются. 6 ячеек R2 x FIFO x D x S, протокол A, R = 40.
+stage: explor
+tag: x_sens_r2
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0, R: R2}
+sweep:
+  Q: [FIFO]
+  D: ["off", "on"]
+  S: [Exp, LogN, Pareto]
+variants:
+  - {name: base2, set: {retry.base: 2.0}, protocols: [A]}
+  - {name: base05, set: {retry.base: 0.5}, protocols: [A]}
+rho_parts:
+  - {start: 0.20, stop: 1.00, step: 0.05}
+replicates: 40

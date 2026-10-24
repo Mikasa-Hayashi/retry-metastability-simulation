@@ -1,0 +1,12 @@
+# 12 активных ячеек (R1, R2 x FIFO x D x S): доведение до R = 100 на всех точках ρ ≤ 1 (грубых и уточнённых)
+stage: main
+tag: m_r100
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+sweep:
+  R: [R1, R2]
+  Q: [FIFO]
+  D: ["off", "on"]
+  S: [Exp, LogN, Pareto]
+protocols: [A, B]
+replicates: 100

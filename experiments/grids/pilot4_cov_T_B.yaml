@@ -1,0 +1,10 @@
+# Часть 4, п. 6: покрытие ДИ. Блок T (T = эталон, P = пул подвыборок), протокол B, независимые seed'ы (>= 110000)
+stage: pilot
+tag: p4_cov_T_B
+seed_mode: indep
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+sweep: {R: [R1]}
+rho_by_protocol: {B: [0.29,0.30,0.31,0.32,0.33,0.34,0.35,0.36,0.37,0.38,0.39]}
+protocols: [B]
+replicates: 400

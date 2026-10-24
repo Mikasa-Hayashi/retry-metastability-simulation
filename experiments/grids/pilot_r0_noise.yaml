@@ -1,0 +1,13 @@
+stage: pilot
+tag: r0_noise
+base_config: configs/r0_fifo_off_exp.yaml
+set:
+  proto.trigger_mult: 1.5
+  proto.trigger_len: 25.0
+sweep: {}
+rho:
+- 0.95
+protocols:
+- A
+- B
+replicates: 200

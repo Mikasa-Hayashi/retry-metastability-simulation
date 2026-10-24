@@ -1,0 +1,24 @@
+{
+ "n_runs_audited": 360,
+ "violations": [],
+ "discipline_order_violations": {
+  "FIFO": [],
+  "LIFO": [],
+  "ALIFO": []
+ },
+ "poisson_trigger_segment": {
+  "observed": 44868,
+  "expected": 44800.0,
+  "z": 0.32126980205784317
+ },
+ "r3_budget_denied_example": 2174,
+ "r3_budget_granted_example": 311,
+ "power_selftest": {
+  "baseline_clean": true,
+  "detects_state_flip": true,
+  "detects_changed_service": true,
+  "detects_shifted_retry": true,
+  "detects_queue_sample": true,
+  "order_check_detects_wrong_discipline": true
+ }
+}

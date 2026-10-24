@@ -1,0 +1,12 @@
+stage: pilot
+tag: speed72
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0}
+sweep:
+  R: [R0, R1, R2, R3]
+  Q: [FIFO, LIFO, ALIFO]
+  D: ["off", "on"]
+  S: [Exp, LogN, Pareto]
+rho: [0.7]
+protocols: [A, B]
+replicates: 1

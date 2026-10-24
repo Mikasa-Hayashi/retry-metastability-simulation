@@ -1,0 +1,5 @@
+[explor] 500/1680 ok=500 err=0 elapsed=12s eta=28s
+[explor] 1000/1680 ok=1000 err=0 elapsed=22s eta=15s
+[explor] 1500/1680 ok=1500 err=0 elapsed=31s eta=4s
+[explor] 1680/1680 ok=1680 err=0 elapsed=35s eta=0s
+{'start': '2026-10-24 13:10:15', 'end': '2026-10-24 13:10:50', 'elapsed_s': 35.23910188674927, 'workers': 7, 'n_tasks': 1680, 'n_ok': 1680, 'n_err': 0, 'tag_filter': 'x_sens_r3_ref', 'git_commit': '2b6df209f1ee04577613f01a54acd40171a49e0e-dirty', 'src_hash': 'fa646ca89ce0cb7da87d0e0a733e0f66760d2b7ecb643f80aa677ef6839244bd', 'versions': 'python=3.12.0;numpy=2.5.4;scipy=1.18.1;pandas=2.3.3;pyarrow=26.0.0;pydantic=2.14.1;pyyaml=6.0.3'}

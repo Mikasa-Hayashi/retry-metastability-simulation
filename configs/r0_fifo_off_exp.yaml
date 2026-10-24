@@ -1,0 +1,32 @@
+# Контроль R0 (нет повторов), FIFO, D=off, S=Exp. Триггер как в базовом конфиге (не калибровано).
+c: 8
+K: 128
+T: 10.0
+R: R0
+Q: FIFO
+D: "off"
+S: Exp
+theta_q: 0.5
+logn_cv: 2.0
+pareto_alpha: 2.5
+retry:
+  max_retries: 3
+  fixed_delay: 1.0
+  base: 1.0
+  multiplier: 2.0
+  cap: 16.0
+  budget_ratio: 0.1
+  budget_window: 100.0
+  budget_reserve: 10.0
+proto:
+  t_warm: 200.0
+  trigger_mult: 4.0   # m_s (сильный триггер из §4, не калибровано)
+  trigger_len: 50.0   # D_s
+  h_rec: 1500.0
+  overload_rho: 1.05
+  overload_len: 400.0
+  window: 100.0
+  w_last: 300.0
+  theta: 0.5
+  rec_level: 0.9
+  rec_hold: 50.0

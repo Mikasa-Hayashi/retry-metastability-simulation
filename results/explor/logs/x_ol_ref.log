@@ -1,0 +1,17 @@
+[explor] 500/7680 ok=500 err=0 elapsed=20s eta=294s
+[explor] 1000/7680 ok=1000 err=0 elapsed=38s eta=252s
+[explor] 1500/7680 ok=1500 err=0 elapsed=61s eta=250s
+[explor] 2000/7680 ok=2000 err=0 elapsed=86s eta=243s
+[explor] 2500/7680 ok=2500 err=0 elapsed=110s eta=228s
+[explor] 3000/7680 ok=3000 err=0 elapsed=144s eta=224s
+[explor] 3500/7680 ok=3500 err=0 elapsed=172s eta=206s
+[explor] 4000/7680 ok=4000 err=0 elapsed=184s eta=169s
+[explor] 4500/7680 ok=4500 err=0 elapsed=210s eta=148s
+[explor] 5000/7680 ok=5000 err=0 elapsed=232s eta=124s
+[explor] 5500/7680 ok=5500 err=0 elapsed=242s eta=96s
+[explor] 6000/7680 ok=6000 err=0 elapsed=255s eta=72s
+[explor] 6500/7680 ok=6500 err=0 elapsed=272s eta=49s
+[explor] 7000/7680 ok=7000 err=0 elapsed=303s eta=29s
+[explor] 7500/7680 ok=7500 err=0 elapsed=326s eta=8s
+[explor] 7680/7680 ok=7680 err=0 elapsed=332s eta=0s
+{'start': '2026-10-24 13:23:35', 'end': '2026-10-24 13:29:07', 'elapsed_s': 331.8427894115448, 'workers': 7, 'n_tasks': 7680, 'n_ok': 7680, 'n_err': 0, 'tag_filter': 'x_ol_ref', 'git_commit': '2b6df209f1ee04577613f01a54acd40171a49e0e-dirty', 'src_hash': 'fa646ca89ce0cb7da87d0e0a733e0f66760d2b7ecb643f80aa677ef6839244bd', 'versions': 'python=3.12.0;numpy=2.5.4;scipy=1.18.1;pandas=2.3.3;pyarrow=26.0.0;pydantic=2.14.1;pyyaml=6.0.3'}

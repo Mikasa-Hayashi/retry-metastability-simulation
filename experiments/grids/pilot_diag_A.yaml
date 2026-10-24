@@ -1,0 +1,16 @@
+stage: pilot
+tag: diag_A
+base_config: configs/base_r1_fifo_off_exp.yaml
+sweep:
+  proto.trigger_mult:
+  - 1.0
+  - 1.25
+  proto.trigger_len:
+  - 25.0
+rho:
+  start: 0.3
+  stop: 0.95
+  step: 0.05
+protocols:
+- A
+replicates: 40

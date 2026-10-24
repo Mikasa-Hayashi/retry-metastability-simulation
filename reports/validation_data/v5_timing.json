@@ -1,0 +1,27 @@
+{
+ "same_seed_same_process_bytes_equal": true,
+ "same_seed_nbytes": 1546017,
+ "diff_seed_bytes_differ": true,
+ "cli_two_processes_equal_except_runtime": {
+  "configs/base_r1_fifo_off_exp.yaml": true,
+  "configs/r0_fifo_off_exp.yaml": true
+ },
+ "diff_seeds_distinct_arrival_streams": true,
+ "diff_seeds_distinct_counts": true,
+ "arrivals_independent_of_policy": true,
+ "global_random_hits": [],
+ "timing_all72_sec": {
+  "n": 216,
+  "mean": 0.1150708921324824,
+  "median": 0.1046389500843361,
+  "p95": 0.23722662500222214,
+  "max": 0.4096563000930473,
+  "worst": "R1/FIFO/on/LogN B rho=0.9"
+ },
+ "timing_reference_R1_FIFO_off_Exp_sec": {
+  "n": 40,
+  "mean": 0.20544090001203585,
+  "max": 0.26621360005810857
+ },
+ "cpu_count": 8
+}

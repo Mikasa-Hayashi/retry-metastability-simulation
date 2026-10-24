@@ -1,0 +1,17 @@
+# Эксплораторный дозапуск К2 (независимая проверка): горизонт восстановления H_rec = 12000 и 24000, протоколы A и B,
+# сетка ρ 0,20..1,00 шаг 0,05 (B тоже до 1,00: у ячеек с D = on порог восстановления выше 0,6), R = 40.
+# Базовые параметры как в основном прогоне (m_s = 1,5; D_s = 25; перегрузка B = 1000). Seed от 1400000.
+stage: explor
+tag: x_k2
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+cells:
+  - {R: R1, Q: FIFO, D: "off", S: Exp}
+  - {R: R1, Q: FIFO, D: "on", S: LogN}
+  - {R: R2, Q: FIFO, D: "on", S: Exp}
+variants:
+  - {name: hrec12000, set: {proto.h_rec: 12000.0}, protocols: [A, B]}
+  - {name: hrec24000, set: {proto.h_rec: 24000.0}, protocols: [A, B]}
+rho_parts:
+  - {start: 0.20, stop: 1.00, step: 0.05}
+replicates: 40

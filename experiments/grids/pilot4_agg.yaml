@@ -1,0 +1,21 @@
+# Часть 4, п. 4: агрессивность клиента. m (число повторов) x T x ALIFO theta_q; R1-R3 x Q x D x S in {Exp, LogN}
+# Конфигурации с m=3, T=10, theta_q=0.5 совпадают с pilot4_scr/ext (тот же config_hash): их точки не дублируются.
+stage: pilot
+tag: p4_agg
+seed_mode: crn
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+sweep:
+  R: [R1, R2, R3]
+  Q: [FIFO, LIFO, ALIFO]
+  D: ["off", "on"]
+  S: [Exp, LogN]
+  retry.max_retries: [3, 6]
+  T: [5.0, 10.0]
+  theta_q: [0.25, 0.5, 0.75, 1.0]
+prune: {theta_q_only_for: ALIFO, theta_q_default: 0.5}
+rho_parts:
+  - {start: 0.20, stop: 1.00, step: 0.05}
+  - {start: 1.05, stop: 1.50, step: 0.05}
+protocols: [A, B]
+replicates: 40

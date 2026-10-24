@@ -1,0 +1,8 @@
+stage: pilot
+tag: p3_cov_A
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0}
+sweep: {}
+rho: [0.80, 0.82, 0.84, 0.86, 0.88, 0.90]
+protocols: [A]
+replicates: 400

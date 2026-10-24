@@ -1,0 +1,9 @@
+stage: pilot
+tag: p3_dg_hi
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0}
+sweep:
+  Q: [FIFO, LIFO, ALIFO]
+rho: [1.05, 1.10, 1.25, 1.50, 2.00]
+protocols: [A, B]
+replicates: 20

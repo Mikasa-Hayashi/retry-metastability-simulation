@@ -1,0 +1,21 @@
+# Часть 4, п. 6: чувствительность опорной конфигурации R1/FIFO/off/Exp прямыми прогонами (одна переменная за раз)
+# Описание вариантов: variants (каждый вариант = набор set-поправок к базе). База входит как вариант 'base'.
+stage: pilot
+tag: p4_sens
+seed_mode: crn
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+variants:
+  - {name: base, set: {}, protocols: [A, B]}
+  - {name: theta03, set: {proto.theta: 0.3}, protocols: [A, B]}
+  - {name: theta07, set: {proto.theta: 0.7}, protocols: [A, B]}
+  - {name: T5, set: {T: 5.0}, protocols: [A, B]}
+  - {name: T20, set: {T: 20.0}, protocols: [A, B]}
+  - {name: K64, set: {K: 64}, protocols: [A, B]}
+  - {name: K256, set: {K: 256}, protocols: [A, B]}
+  - {name: trg125, set: {proto.trigger_mult: 1.25}, protocols: [A]}
+  - {name: trg175, set: {proto.trigger_mult: 1.75}, protocols: [A]}
+rho_parts:
+  - {start: 0.20, stop: 1.00, step: 0.05}
+  - {start: 1.10, stop: 1.50, step: 0.10}
+replicates: 40

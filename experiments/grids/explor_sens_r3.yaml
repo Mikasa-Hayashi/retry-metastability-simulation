@@ -1,0 +1,16 @@
+# Эксплораторно (В6): чувствительность R3 к бюджету повторов: budget_ratio = 0,05 и 0,20 (в основном 0,10);
+# запас 10 и окно 100 не меняются. 6 ячеек R3 x FIFO x D x S, протокол A, R = 40.
+stage: explor
+tag: x_sens_r3
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0, R: R3}
+sweep:
+  Q: [FIFO]
+  D: ["off", "on"]
+  S: [Exp, LogN, Pareto]
+variants:
+  - {name: budget05, set: {retry.budget_ratio: 0.05}, protocols: [A]}
+  - {name: budget20, set: {retry.budget_ratio: 0.20}, protocols: [A]}
+rho_parts:
+  - {start: 0.20, stop: 1.00, step: 0.05}
+replicates: 40

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.ipynb_checkpoints/
+# сырые данные не удаляем, но крупные parquet по умолчанию не коммитим (решается на G3/G4)
+results/**/*.parquet

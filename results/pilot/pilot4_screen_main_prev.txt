@@ -1,0 +1,484 @@
+# pilot4 screen 'main_prev': теги ['p4_scr', 'p4_ext'], конфигураций 72, ρ_max 2.5, bootstrap 2000, реплик в точке (min) 40
+
+## Δ(ρ ≤ 1) [простой критерий g < 0,5]
+ R     Q   D      S  le1_fold le1_fold_cens  le1_rel le1_rel_cens  le1_delta  le1_d_lo  le1_d_hi  le1_N1       le1_cls
+R0 ALIFO off    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0 ALIFO off   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0 ALIFO off Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0 ALIFO  on    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0 ALIFO  on   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0 ALIFO  on Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0  FIFO off    Exp     0.993          none    1.000        right     -0.007    -0.016     0.002   False no_hysteresis
+R0  FIFO off   LogN     1.000         right    1.000        right      0.000    -0.009     0.008   False    no_failure
+R0  FIFO off Pareto     0.997          none    0.994         none      0.003    -0.008     0.014   False no_hysteresis
+R0  FIFO  on    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0  FIFO  on   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0  FIFO  on Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO off    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO off   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO off Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO  on    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO  on   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO  on Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO off    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO off   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO off Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO  on    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO  on   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO  on Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1  FIFO off    Exp     0.850          none    0.335         none      0.515     0.500     0.531    True          meta
+R1  FIFO off   LogN     0.780          none    0.452         none      0.328     0.308     0.346    True          meta
+R1  FIFO off Pareto     0.874          none    0.307         none      0.567     0.552     0.585    True          meta
+R1  FIFO  on    Exp     0.850          none    0.598         none      0.253     0.238     0.268    True          meta
+R1  FIFO  on   LogN     0.802          none    0.767         none      0.035     0.019     0.051    True          meta
+R1  FIFO  on Pareto     0.874          none    0.429         none      0.445     0.430     0.459    True          meta
+R1  LIFO off    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1  LIFO off   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1  LIFO off Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1  LIFO  on    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1  LIFO  on   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R1  LIFO  on Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO off    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO off   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO off Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO  on    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO  on   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO  on Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2  FIFO off    Exp     0.850          none    0.340         none      0.510     0.495     0.526    True          meta
+R2  FIFO off   LogN     0.780          none    0.462         none      0.318     0.298     0.336    True          meta
+R2  FIFO off Pareto     0.873          none    0.305         none      0.568     0.554     0.583    True          meta
+R2  FIFO  on    Exp     0.850          none    0.565         none      0.285     0.270     0.301    True          meta
+R2  FIFO  on   LogN     0.801          none    0.716         none      0.085     0.069     0.102    True          meta
+R2  FIFO  on Pareto     0.873          none    0.412         none      0.460     0.446     0.475    True          meta
+R2  LIFO off    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2  LIFO off   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2  LIFO off Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2  LIFO  on    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2  LIFO  on   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R2  LIFO  on Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO off    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO off   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO off Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO  on    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO  on   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO  on Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3  FIFO off    Exp     0.955          none    0.952         none      0.003    -0.009     0.015   False no_hysteresis
+R3  FIFO off   LogN     0.946          none    0.952         none     -0.006    -0.023     0.012   False no_hysteresis
+R3  FIFO off Pareto     0.958          none    0.959         none     -0.001    -0.014     0.008   False no_hysteresis
+R3  FIFO  on    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3  FIFO  on   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3  FIFO  on Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO off    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO off   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO off Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO  on    Exp     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO  on   LogN     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO  on Pareto     1.000         right    1.000        right      0.000     0.000     0.000   False    no_failure
+N1 = 12 из 72; N2 = 10; классы: {'no_failure': 55, 'meta': 12, 'no_hysteresis': 5}
+цензурировано справа: ρ_fold 55, ρ_release 56; слева: ρ_release 0
+маргинально по R:
+ R  n  N1  N2  fold_cens  rel_cens
+R0 18   0   0         16        17
+R1 18   6   5         12        12
+R2 18   6   5         12        12
+R3 18   0   0         15        15
+маргинально по Q:
+    Q  n  N1  N2  fold_cens  rel_cens
+ALIFO 24   0   0         24        24
+ FIFO 24  12  10          7         8
+ LIFO 24   0   0         24        24
+маргинально по D:
+  D  n  N1  N2  fold_cens  rel_cens
+off 36   6   6         25        26
+ on 36   6   4         30        30
+маргинально по S:
+     S  n  N1  N2  fold_cens  rel_cens
+   Exp 24   4   4         18        19
+  LogN 24   4   2         19        19
+Pareto 24   4   4         18        18
+маргинально по R×Q:
+ R     Q  n  N1  N2  fold_cens  rel_cens
+R0 ALIFO  6   0   0          6         6
+R0  FIFO  6   0   0          4         5
+R0  LIFO  6   0   0          6         6
+R1 ALIFO  6   0   0          6         6
+R1  FIFO  6   6   5          0         0
+R1  LIFO  6   0   0          6         6
+R2 ALIFO  6   0   0          6         6
+R2  FIFO  6   6   5          0         0
+R2  LIFO  6   0   0          6         6
+R3 ALIFO  6   0   0          6         6
+R3  FIFO  6   0   0          3         3
+R3  LIFO  6   0   0          6         6
+
+## Δ_ext (ρ ≤ 2.5) [простой критерий]
+ R     Q   D      S  ext_fold ext_fold_cens  ext_rel ext_rel_cens  ext_delta  ext_d_lo  ext_d_hi  ext_N1       ext_cls
+R0 ALIFO off    Exp     1.967          none    1.964         none      0.003    -0.021     0.026   False no_hysteresis
+R0 ALIFO off   LogN     1.940          none    1.942         none     -0.003    -0.033     0.028   False no_hysteresis
+R0 ALIFO off Pareto     1.975          none    1.987         none     -0.012    -0.048     0.008   False no_hysteresis
+R0 ALIFO  on    Exp     1.996          none    2.007         none     -0.011    -0.038     0.013   False no_hysteresis
+R0 ALIFO  on   LogN     2.000          none    1.995         none      0.005    -0.025     0.037   False no_hysteresis
+R0 ALIFO  on Pareto     1.989          none    2.002         none     -0.013    -0.038     0.013   False no_hysteresis
+R0  FIFO off    Exp     0.993          none    1.003         none     -0.010    -0.023     0.007   False no_hysteresis
+R0  FIFO off   LogN     1.004          none    1.005         none     -0.001    -0.016     0.014   False no_hysteresis
+R0  FIFO off Pareto     0.995          none    0.990         none      0.006    -0.009     0.020   False no_hysteresis
+R0  FIFO  on    Exp     1.104          none    1.095         none      0.009    -0.004     0.035   False no_hysteresis
+R0  FIFO  on   LogN     1.160          none    1.176         none     -0.016    -0.038     0.009   False no_hysteresis
+R0  FIFO  on Pareto     1.070          none    1.060         none      0.009    -0.002     0.025   False no_hysteresis
+R0  LIFO off    Exp     1.975          none    1.979         none     -0.004    -0.025     0.017   False no_hysteresis
+R0  LIFO off   LogN     1.942          none    1.937         none      0.005    -0.025     0.035   False no_hysteresis
+R0  LIFO off Pareto     1.970          none    1.982         none     -0.012    -0.033     0.010   False no_hysteresis
+R0  LIFO  on    Exp     1.993          none    1.995         none     -0.002    -0.033     0.025   False no_hysteresis
+R0  LIFO  on   LogN     1.985          none    1.988         none     -0.002    -0.030     0.030   False no_hysteresis
+R0  LIFO  on Pareto     2.011          none    1.995         none      0.016    -0.014     0.045   False no_hysteresis
+R1 ALIFO off    Exp     1.980          none    2.000         none     -0.020    -0.046     0.009   False no_hysteresis
+R1 ALIFO off   LogN     1.953          none    1.980         none     -0.028    -0.057     0.002   False no_hysteresis
+R1 ALIFO off Pareto     1.979          none    2.000         none     -0.021    -0.046     0.005   False no_hysteresis
+R1 ALIFO  on    Exp     2.000          none    1.995         none      0.005    -0.029     0.033   False no_hysteresis
+R1 ALIFO  on   LogN     1.980          none    1.968         none      0.013    -0.015     0.040   False no_hysteresis
+R1 ALIFO  on Pareto     2.008          none    2.017         none     -0.008    -0.033     0.017   False no_hysteresis
+R1  FIFO off    Exp     0.850          none    0.335         none      0.515     0.499     0.531    True          meta
+R1  FIFO off   LogN     0.780          none    0.452         none      0.328     0.308     0.348    True          meta
+R1  FIFO off Pareto     0.874          none    0.307         none      0.567     0.553     0.585    True          meta
+R1  FIFO  on    Exp     0.850          none    0.598         none      0.252     0.238     0.269    True          meta
+R1  FIFO  on   LogN     0.802          none    0.767         none      0.035     0.019     0.051    True          meta
+R1  FIFO  on Pareto     0.874          none    0.429         none      0.445     0.430     0.459    True          meta
+R1  LIFO off    Exp     1.995          none    1.990         none      0.005    -0.015     0.033   False no_hysteresis
+R1  LIFO off   LogN     1.950          none    1.968         none     -0.018    -0.050     0.015   False no_hysteresis
+R1  LIFO off Pareto     1.974          none    1.983         none     -0.009    -0.040     0.018   False no_hysteresis
+R1  LIFO  on    Exp     2.009          none    2.012         none     -0.003    -0.035     0.025   False no_hysteresis
+R1  LIFO  on   LogN     1.980          none    1.970         none      0.010    -0.017     0.038   False no_hysteresis
+R1  LIFO  on Pareto     2.002          none    2.009         none     -0.007    -0.036     0.026   False no_hysteresis
+R2 ALIFO off    Exp     2.000          none    2.009         none     -0.009    -0.042     0.026   False no_hysteresis
+R2 ALIFO off   LogN     1.978          none    1.968         none      0.010    -0.022     0.042   False no_hysteresis
+R2 ALIFO off Pareto     1.984          none    1.991         none     -0.007    -0.039     0.018   False no_hysteresis
+R2 ALIFO  on    Exp     1.998          none    2.006         none     -0.008    -0.040     0.013   False no_hysteresis
+R2 ALIFO  on   LogN     1.980          none    1.990         none     -0.010    -0.040     0.020   False no_hysteresis
+R2 ALIFO  on Pareto     2.017          none    2.000         none      0.017    -0.019     0.046   False no_hysteresis
+R2  FIFO off    Exp     0.850          none    0.340         none      0.510     0.494     0.526    True          meta
+R2  FIFO off   LogN     0.780          none    0.462         none      0.318     0.298     0.338    True          meta
+R2  FIFO off Pareto     0.873          none    0.305         none      0.568     0.552     0.584    True          meta
+R2  FIFO  on    Exp     0.850          none    0.565         none      0.285     0.269     0.301    True          meta
+R2  FIFO  on   LogN     0.801          none    0.716         none      0.085     0.068     0.102    True          meta
+R2  FIFO  on Pareto     0.873          none    0.412         none      0.460     0.445     0.475    True          meta
+R2  LIFO off    Exp     1.993          none    2.002         none     -0.009    -0.034     0.015   False no_hysteresis
+R2  LIFO off   LogN     1.983          none    1.970         none      0.013    -0.020     0.045   False no_hysteresis
+R2  LIFO off Pareto     1.973          none    1.998         none     -0.025    -0.053    -0.003   False no_hysteresis
+R2  LIFO  on    Exp     1.993          none    1.998         none     -0.004    -0.028     0.019   False no_hysteresis
+R2  LIFO  on   LogN     1.983          none    1.978         none      0.005    -0.025     0.035   False no_hysteresis
+R2  LIFO  on Pareto     1.985          none    2.007         none     -0.022    -0.050    -0.002   False no_hysteresis
+R3 ALIFO off    Exp     1.969          none    1.964         none      0.005    -0.020     0.029   False no_hysteresis
+R3 ALIFO off   LogN     1.927          none    1.968         none     -0.040    -0.070    -0.010   False no_hysteresis
+R3 ALIFO off Pareto     1.986          none    1.977         none      0.009    -0.019     0.031   False no_hysteresis
+R3 ALIFO  on    Exp     1.994          none    2.025         none     -0.031    -0.061    -0.012   False no_hysteresis
+R3 ALIFO  on   LogN     1.988          none    2.017         none     -0.030    -0.060     0.000   False no_hysteresis
+R3 ALIFO  on Pareto     1.991          none    2.000         none     -0.009    -0.040     0.026   False no_hysteresis
+R3  FIFO off    Exp     0.955          none    0.952         none      0.002    -0.012     0.016   False no_hysteresis
+R3  FIFO off   LogN     0.948          none    0.951         none     -0.004    -0.020     0.014   False no_hysteresis
+R3  FIFO off Pareto     0.958          none    0.965         none     -0.007    -0.015     0.009   False no_hysteresis
+R3  FIFO  on    Exp     1.050          none    1.061         none     -0.011    -0.024     0.002   False no_hysteresis
+R3  FIFO  on   LogN     1.107          none    1.141         none     -0.034    -0.053    -0.012   False no_hysteresis
+R3  FIFO  on Pareto     1.038          none    1.038         none      0.000    -0.010     0.015   False no_hysteresis
+R3  LIFO off    Exp     1.964          none    1.974         none     -0.010    -0.033     0.013   False no_hysteresis
+R3  LIFO off   LogN     1.950          none    1.965         none     -0.015    -0.048     0.017   False no_hysteresis
+R3  LIFO off Pareto     1.980          none    1.985         none     -0.005    -0.024     0.028   False no_hysteresis
+R3  LIFO  on    Exp     2.004          none    2.007         none     -0.003    -0.028     0.023   False no_hysteresis
+R3  LIFO  on   LogN     1.963          none    1.995         none     -0.032    -0.062    -0.002   False no_hysteresis
+R3  LIFO  on Pareto     1.991          none    1.987         none      0.004    -0.030     0.037   False no_hysteresis
+N1 = 12 из 72; N2 = 10; классы: {'no_hysteresis': 60, 'meta': 12}
+цензурировано справа: ρ_fold 0, ρ_release 0; слева: ρ_release 0
+маргинально по R:
+ R  n  N1  N2  fold_cens  rel_cens
+R0 18   0   0          0         0
+R1 18   6   5          0         0
+R2 18   6   5          0         0
+R3 18   0   0          0         0
+маргинально по Q:
+    Q  n  N1  N2  fold_cens  rel_cens
+ALIFO 24   0   0          0         0
+ FIFO 24  12  10          0         0
+ LIFO 24   0   0          0         0
+маргинально по D:
+  D  n  N1  N2  fold_cens  rel_cens
+off 36   6   6          0         0
+ on 36   6   4          0         0
+маргинально по S:
+     S  n  N1  N2  fold_cens  rel_cens
+   Exp 24   4   4          0         0
+  LogN 24   4   2          0         0
+Pareto 24   4   4          0         0
+маргинально по R×Q:
+ R     Q  n  N1  N2  fold_cens  rel_cens
+R0 ALIFO  6   0   0          0         0
+R0  FIFO  6   0   0          0         0
+R0  LIFO  6   0   0          0         0
+R1 ALIFO  6   0   0          0         0
+R1  FIFO  6   6   5          0         0
+R1  LIFO  6   0   0          0         0
+R2 ALIFO  6   0   0          0         0
+R2  FIFO  6   6   5          0         0
+R2  LIFO  6   0   0          0         0
+R3 ALIFO  6   0   0          0         0
+R3  FIFO  6   0   0          0         0
+R3  LIFO  6   0   0          0         0
+
+## Δ_ext (ρ ≤ 2.5) [нормированный g·max(1,ρ) < 0,5, эксплораторно]
+ R     Q   D      S  nrm_fold nrm_fold_cens  nrm_rel nrm_rel_cens  nrm_delta  nrm_d_lo  nrm_d_hi  nrm_N1       nrm_cls
+R0 ALIFO off    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0 ALIFO off   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0 ALIFO off Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0 ALIFO  on    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0 ALIFO  on   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0 ALIFO  on Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0  FIFO off    Exp     0.993          none    1.003         none     -0.010    -0.023     0.007   False no_hysteresis
+R0  FIFO off   LogN     1.004          none    1.006         none     -0.002    -0.018     0.013   False no_hysteresis
+R0  FIFO off Pareto     0.995          none    0.990         none      0.006    -0.009     0.020   False no_hysteresis
+R0  FIFO  on    Exp     1.121          none    1.121         none     -0.000    -0.025     0.018   False no_hysteresis
+R0  FIFO  on   LogN     1.205          none    1.248         none     -0.042    -0.069    -0.017   False no_hysteresis
+R0  FIFO  on Pareto     1.076          none    1.070         none      0.006    -0.007     0.019   False no_hysteresis
+R0  LIFO off    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO off   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO off Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO  on    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO  on   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R0  LIFO  on Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO off    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO off   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO off Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO  on    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO  on   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1 ALIFO  on Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1  FIFO off    Exp     0.850          none    0.335         none      0.515     0.499     0.531    True          meta
+R1  FIFO off   LogN     0.780          none    0.452         none      0.328     0.308     0.348    True          meta
+R1  FIFO off Pareto     0.874          none    0.307         none      0.567     0.553     0.585    True          meta
+R1  FIFO  on    Exp     0.850          none    0.598         none      0.252     0.238     0.269    True          meta
+R1  FIFO  on   LogN     0.802          none    0.767         none      0.035     0.019     0.051    True          meta
+R1  FIFO  on Pareto     0.874          none    0.429         none      0.445     0.430     0.459    True          meta
+R1  LIFO off    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1  LIFO off   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1  LIFO off Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1  LIFO  on    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1  LIFO  on   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R1  LIFO  on Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO off    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO off   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO off Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO  on    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO  on   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2 ALIFO  on Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2  FIFO off    Exp     0.850          none    0.340         none      0.510     0.494     0.526    True          meta
+R2  FIFO off   LogN     0.780          none    0.462         none      0.318     0.298     0.338    True          meta
+R2  FIFO off Pareto     0.873          none    0.305         none      0.568     0.552     0.584    True          meta
+R2  FIFO  on    Exp     0.850          none    0.565         none      0.285     0.269     0.301    True          meta
+R2  FIFO  on   LogN     0.801          none    0.716         none      0.085     0.068     0.102    True          meta
+R2  FIFO  on Pareto     0.873          none    0.412         none      0.460     0.445     0.475    True          meta
+R2  LIFO off    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2  LIFO off   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2  LIFO off Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2  LIFO  on    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2  LIFO  on   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R2  LIFO  on Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO off    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO off   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO off Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO  on    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO  on   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3 ALIFO  on Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3  FIFO off    Exp     0.955          none    0.952         none      0.002    -0.012     0.016   False no_hysteresis
+R3  FIFO off   LogN     0.948          none    0.951         none     -0.004    -0.020     0.014   False no_hysteresis
+R3  FIFO off Pareto     0.958          none    0.965         none     -0.007    -0.015     0.009   False no_hysteresis
+R3  FIFO  on    Exp     1.065          none    1.073         none     -0.008    -0.023     0.008   False no_hysteresis
+R3  FIFO  on   LogN     1.143          none    1.182         none     -0.039    -0.064    -0.014   False no_hysteresis
+R3  FIFO  on Pareto     1.042          none    1.042         none     -0.000    -0.013     0.014   False no_hysteresis
+R3  LIFO off    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO off   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO off Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO  on    Exp     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO  on   LogN     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+R3  LIFO  on Pareto     2.500         right    2.500        right      0.000     0.000     0.000   False    no_failure
+N1 = 12 из 72; N2 = 10; классы: {'no_failure': 48, 'no_hysteresis': 12, 'meta': 12}
+цензурировано справа: ρ_fold 48, ρ_release 48; слева: ρ_release 0
+маргинально по R:
+ R  n  N1  N2  fold_cens  rel_cens
+R0 18   0   0         12        12
+R1 18   6   5         12        12
+R2 18   6   5         12        12
+R3 18   0   0         12        12
+маргинально по Q:
+    Q  n  N1  N2  fold_cens  rel_cens
+ALIFO 24   0   0         24        24
+ FIFO 24  12  10          0         0
+ LIFO 24   0   0         24        24
+маргинально по D:
+  D  n  N1  N2  fold_cens  rel_cens
+off 36   6   6         24        24
+ on 36   6   4         24        24
+маргинально по S:
+     S  n  N1  N2  fold_cens  rel_cens
+   Exp 24   4   4         16        16
+  LogN 24   4   2         16        16
+Pareto 24   4   4         16        16
+маргинально по R×Q:
+ R     Q  n  N1  N2  fold_cens  rel_cens
+R0 ALIFO  6   0   0          6         6
+R0  FIFO  6   0   0          0         0
+R0  LIFO  6   0   0          6         6
+R1 ALIFO  6   0   0          6         6
+R1  FIFO  6   6   5          0         0
+R1  LIFO  6   0   0          6         6
+R2 ALIFO  6   0   0          6         6
+R2  FIFO  6   6   5          0         0
+R2  LIFO  6   0   0          6         6
+R3 ALIFO  6   0   0          6         6
+R3  FIFO  6   0   0          0         0
+R3  LIFO  6   0   0          6         6
+
+## A ≈ B (|P_B − P_A| по общим узлам ρ)
+ R     Q   D      S  gap_max_all  gap_mean_all  gap_max_gt1  gap_mean_gt1  rho_star_A  rho_star_B  maxPA  maxPB
+R0 ALIFO off    Exp        0.025         0.001        0.025         0.002        2.00        2.00    1.0    1.0
+R0 ALIFO off   LogN        0.050         0.002        0.050         0.005        2.00        2.00    1.0    1.0
+R0 ALIFO off Pareto        0.200         0.007        0.200         0.014        2.00        2.00    1.0    1.0
+R0 ALIFO  on    Exp        0.075         0.004        0.075         0.008        2.00        2.10    1.0    1.0
+R0 ALIFO  on   LogN        0.050         0.005        0.050         0.009        2.00        2.10    1.0    1.0
+R0 ALIFO  on Pareto        0.075         0.005        0.075         0.009        2.00        2.00    1.0    1.0
+R0  FIFO off    Exp        0.150         0.005        0.000         0.000        1.00        1.05    1.0    1.0
+R0  FIFO off   LogN        0.025         0.002        0.025         0.002        1.05        1.05    1.0    1.0
+R0  FIFO off Pareto        0.075         0.002        0.000         0.000        1.00        1.00    1.0    1.0
+R0  FIFO  on    Exp        0.150         0.005        0.150         0.011        1.20        1.10    1.0    1.0
+R0  FIFO  on   LogN        0.075         0.005        0.075         0.009        1.20        1.20    1.0    1.0
+R0  FIFO  on Pareto        0.150         0.008        0.150         0.016        1.10        1.10    1.0    1.0
+R0  LIFO off    Exp        0.050         0.002        0.050         0.003        2.00        2.00    1.0    1.0
+R0  LIFO off   LogN        0.100         0.005        0.100         0.009        2.00        2.00    1.0    1.0
+R0  LIFO off Pareto        0.125         0.004        0.125         0.008        2.00        2.00    1.0    1.0
+R0  LIFO  on    Exp        0.050         0.003        0.050         0.006        2.00        2.00    1.0    1.0
+R0  LIFO  on   LogN        0.175         0.010        0.175         0.020        2.00        2.10    1.0    1.0
+R0  LIFO  on Pareto        0.150         0.006        0.150         0.013        2.10        2.00    1.0    1.0
+R1 ALIFO off    Exp        0.150         0.005        0.150         0.011        2.00        2.10    1.0    1.0
+R1 ALIFO off   LogN        0.125         0.011        0.125         0.023        2.00        2.00    1.0    1.0
+R1 ALIFO off Pareto        0.125         0.007        0.125         0.014        2.00        2.00    1.0    1.0
+R1 ALIFO  on    Exp        0.025         0.001        0.025         0.002        2.00        2.00    1.0    1.0
+R1 ALIFO  on   LogN        0.125         0.007        0.125         0.014        2.00        2.00    1.0    1.0
+R1 ALIFO  on Pareto        0.050         0.003        0.050         0.006        2.10        2.10    1.0    1.0
+R1  FIFO off    Exp        1.000         0.312        0.000         0.000        0.85        0.35    1.0    1.0
+R1  FIFO off   LogN        0.975         0.198        0.000         0.000        0.80        0.45    1.0    1.0
+R1  FIFO off Pareto        1.000         0.345        0.000         0.000        0.90        0.35    1.0    1.0
+R1  FIFO  on    Exp        1.000         0.153        0.000         0.000        0.85        0.60    1.0    1.0
+R1  FIFO  on   LogN        0.300         0.021        0.000         0.000        0.80        0.80    1.0    1.0
+R1  FIFO  on Pareto        1.000         0.270        0.000         0.000        0.90        0.45    1.0    1.0
+R1  LIFO off    Exp        0.075         0.005        0.075         0.011        2.00        2.00    1.0    1.0
+R1  LIFO off   LogN        0.125         0.007        0.125         0.014        2.00        2.00    1.0    1.0
+R1  LIFO off Pareto        0.075         0.002        0.075         0.005        2.00        2.00    1.0    1.0
+R1  LIFO  on    Exp        0.075         0.005        0.075         0.011        2.10        2.10    1.0    1.0
+R1  LIFO  on   LogN        0.150         0.009        0.150         0.019        2.00        2.00    1.0    1.0
+R1  LIFO  on Pareto        0.050         0.002        0.050         0.005        2.00        2.10    1.0    1.0
+R2 ALIFO off    Exp        0.050         0.002        0.050         0.003        2.00        2.10    1.0    1.0
+R2 ALIFO off   LogN        0.100         0.008        0.100         0.016        2.00        2.00    1.0    1.0
+R2 ALIFO off Pareto        0.125         0.005        0.125         0.011        2.00        2.00    1.0    1.0
+R2 ALIFO  on    Exp        0.175         0.008        0.175         0.016        2.00        2.10    1.0    1.0
+R2 ALIFO  on   LogN        0.075         0.005        0.075         0.009        2.00        2.00    1.0    1.0
+R2 ALIFO  on Pareto        0.100         0.003        0.100         0.006        2.10        2.00    1.0    1.0
+R2  FIFO off    Exp        1.000         0.309        0.000         0.000        0.85        0.35    1.0    1.0
+R2  FIFO off   LogN        0.975         0.192        0.000         0.000        0.80        0.45    1.0    1.0
+R2  FIFO off Pareto        1.000         0.344        0.000         0.000        0.90        0.35    1.0    1.0
+R2  FIFO  on    Exp        1.000         0.173        0.000         0.000        0.85        0.60    1.0    1.0
+R2  FIFO  on   LogN        0.575         0.053        0.000         0.000        0.85        0.75    1.0    1.0
+R2  FIFO  on Pareto        1.000         0.279        0.000         0.000        0.90        0.45    1.0    1.0
+R2  LIFO off    Exp        0.150         0.006        0.150         0.012        2.00        2.10    1.0    1.0
+R2  LIFO off   LogN        0.100         0.007        0.100         0.014        2.00        2.00    1.0    1.0
+R2  LIFO off Pareto        0.250         0.008        0.250         0.017        2.00        2.00    1.0    1.0
+R2  LIFO  on    Exp        0.025         0.002        0.025         0.003        2.00        2.00    1.0    1.0
+R2  LIFO  on   LogN        0.100         0.008        0.100         0.016        2.00        2.00    1.0    1.0
+R2  LIFO  on Pareto        0.250         0.009        0.250         0.019        2.00        2.10    1.0    1.0
+R3 ALIFO off    Exp        0.050         0.002        0.050         0.003        2.00        2.00    1.0    1.0
+R3 ALIFO off   LogN        0.250         0.012        0.250         0.025        2.00        2.00    1.0    1.0
+R3 ALIFO off Pareto        0.050         0.003        0.050         0.006        2.00        2.00    1.0    1.0
+R3 ALIFO  on    Exp        0.325         0.011        0.325         0.022        2.00        2.10    1.0    1.0
+R3 ALIFO  on   LogN        0.225         0.011        0.225         0.022        2.00        2.10    1.0    1.0
+R3 ALIFO  on Pareto        0.050         0.002        0.050         0.003        2.00        2.00    1.0    1.0
+R3  FIFO off    Exp        0.075         0.003        0.000         0.000        1.00        1.00    1.0    1.0
+R3  FIFO off   LogN        0.075         0.007        0.050         0.005        1.00        1.00    1.0    1.0
+R3  FIFO off Pareto        0.025         0.002        0.000         0.000        1.00        1.00    1.0    1.0
+R3  FIFO  on    Exp        0.175         0.007        0.175         0.012        1.05        1.10    1.0    1.0
+R3  FIFO  on   LogN        0.175         0.011        0.175         0.022        1.20        1.20    1.0    1.0
+R3  FIFO  on Pareto        0.075         0.005        0.075         0.006        1.05        1.05    1.0    1.0
+R3  LIFO off    Exp        0.075         0.003        0.075         0.006        2.00        2.00    1.0    1.0
+R3  LIFO off   LogN        0.100         0.008        0.100         0.016        2.00        2.00    1.0    1.0
+R3  LIFO off Pareto        0.025         0.002        0.025         0.003        2.00        2.00    1.0    1.0
+R3  LIFO  on    Exp        0.075         0.004        0.075         0.008        2.10        2.10    1.0    1.0
+R3  LIFO  on   LogN        0.125         0.011        0.125         0.023        2.00        2.00    1.0    1.0
+R3  LIFO  on Pareto        0.025         0.001        0.025         0.002        2.00        2.00    1.0    1.0
+
+## Чувствительность нормированного критерия к θ_n (точечно, без ДИ): ρ_fold / ρ_release / Δ
+ R     Q   D      S  nrm0.3_fold  nrm0.3_rel  nrm0.3_delta  nrm0.7_fold  nrm0.7_rel  nrm0.7_delta  nrm0.9_fold  nrm0.9_rel  nrm0.9_delta
+R0 ALIFO off    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0 ALIFO off   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0 ALIFO off Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0 ALIFO  on    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0 ALIFO  on   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0 ALIFO  on Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0  FIFO off    Exp        1.002       1.009        -0.007        0.997       0.993         0.003        0.988       0.985         0.003
+R0  FIFO off   LogN        1.042       1.032         0.010        0.980       0.984        -0.004        0.938       0.946        -0.009
+R0  FIFO off Pareto        0.998       1.002        -0.005        0.990       0.984         0.006        0.989       0.982         0.007
+R0  FIFO  on    Exp        1.286       1.277         0.008        1.053       1.045         0.007        1.008       1.006         0.002
+R0  FIFO  on   LogN        2.146       2.129         0.017        1.100       1.100         0.000        0.998       1.002        -0.005
+R0  FIFO  on Pareto        1.132       1.123         0.009        1.036       1.031         0.005        1.007       1.007         0.000
+R0  LIFO off    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0  LIFO off   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0  LIFO off Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0  LIFO  on    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0  LIFO  on   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R0  LIFO  on Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1 ALIFO off    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1 ALIFO off   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1 ALIFO off Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1 ALIFO  on    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1 ALIFO  on   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1 ALIFO  on Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1  FIFO off    Exp        0.850       0.335         0.515        0.850       0.334         0.516        0.850       0.333         0.517
+R1  FIFO off   LogN        0.780       0.454         0.326        0.779       0.447         0.331        0.779       0.447         0.331
+R1  FIFO off Pareto        0.874       0.307         0.567        0.874       0.302         0.571        0.874       0.302         0.571
+R1  FIFO  on    Exp        0.855       0.730         0.125        0.850       0.595         0.255        0.850       0.593         0.257
+R1  FIFO  on   LogN        2.500       2.435         0.065        0.798       0.746         0.051        0.795       0.744         0.051
+R1  FIFO  on Pareto        0.874       0.430         0.443        0.874       0.426         0.447        0.874       0.426         0.447
+R1  LIFO off    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1  LIFO off   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1  LIFO off Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1  LIFO  on    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1  LIFO  on   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R1  LIFO  on Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2 ALIFO off    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2 ALIFO off   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2 ALIFO off Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2 ALIFO  on    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2 ALIFO  on   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2 ALIFO  on Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2  FIFO off    Exp        0.850       0.342         0.508        0.850       0.340         0.510        0.850       0.339         0.511
+R2  FIFO off   LogN        0.780       0.464         0.316        0.779       0.456         0.323        0.779       0.451         0.328
+R2  FIFO off Pareto        0.873       0.306         0.567        0.873       0.303         0.569        0.873       0.303         0.569
+R2  FIFO  on    Exp        0.850       0.648         0.203        0.850       0.565         0.285        0.850       0.562         0.288
+R2  FIFO  on   LogN        2.275       2.368        -0.093        0.799       0.700         0.099        0.798       0.695         0.103
+R2  FIFO  on Pareto        0.873       0.414         0.459        0.873       0.410         0.463        0.873       0.407         0.465
+R2  LIFO off    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2  LIFO off   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2  LIFO off Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2  LIFO  on    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2  LIFO  on   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R2  LIFO  on Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3 ALIFO off    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3 ALIFO off   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3 ALIFO off Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3 ALIFO  on    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3 ALIFO  on   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3 ALIFO  on Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3  FIFO off    Exp        0.961       0.957         0.004        0.950       0.950         0.000        0.945       0.945        -0.000
+R3  FIFO off   LogN        0.974       0.974        -0.000        0.929       0.928         0.001        0.891       0.898        -0.006
+R3  FIFO off Pareto        0.959       0.962        -0.003        0.957       0.960        -0.003        0.953       0.958        -0.005
+R3  FIFO  on    Exp        1.218       1.222        -0.004        1.014       1.015        -0.001        0.980       0.979         0.001
+R3  FIFO  on   LogN        2.115       2.087         0.028        1.032       1.053        -0.021        0.969       0.949         0.020
+R3  FIFO  on Pareto        1.094       1.086         0.007        1.009       1.005         0.005        0.991       0.985         0.006
+R3  LIFO off    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3  LIFO off   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3  LIFO off Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3  LIFO  on    Exp        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3  LIFO  on   LogN        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000
+R3  LIFO  on Pareto        2.500       2.500         0.000        2.500       2.500         0.000        2.500       2.500         0.000

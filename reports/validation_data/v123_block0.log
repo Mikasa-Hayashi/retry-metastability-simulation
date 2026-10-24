@@ -1,0 +1,13 @@
+V1 c1_rho0.5 {'wq': (0.9975, 1.0, True), 'pwait': (0.5, 0.5, True), 'w': (1.9979, 2.0, True)}
+V1 c1_rho0.7 {'wq': (2.3357, 2.3333, True), 'pwait': (0.7005, 0.7, True), 'w': (3.3357, 3.3333, True)}
+V1 c1_rho0.9 {'wq': (9.0437, 9.0, True), 'pwait': (0.9001, 0.9, True), 'w': (10.0441, 10.0, True)}
+V1 c8_rho0.5 {'wq': (0.0148, 0.0148, True), 'pwait': (0.059, 0.059, True), 'w': (1.0156, 1.0148, True)}
+V1 c8_rho0.7 {'wq': (0.1131, 0.1128, True), 'pwait': (0.2714, 0.2706, True), 'w': (1.1133, 1.1128, True)}
+V1 c8_rho0.9 {'wq': (0.8958, 0.8769, True), 'pwait': (0.7035, 0.7015, True), 'w': (1.8961, 1.8769, True)}
+V2 c1_rho0.5 {'wq_FIFO': (1.0012, True), 'wq_LIFO': (1.0056, True), 'wq_ALIFO': (1.0012, True), 'paired_diff_LIFO-FIFO': (0.0044, False), 'paired_diff_ALIFO-FIFO': (0.0, True), 'var_FIFO_vs_theory': (3.008, True), 'var_LIFO_vs_theory': (7.1284, True)} varF/L 3.008 7.128
+V2 c1_rho0.7 {'wq_FIFO': (2.3379, True), 'wq_LIFO': (2.3451, True), 'wq_ALIFO': (2.3379, True), 'paired_diff_LIFO-FIFO': (0.0071, True), 'paired_diff_ALIFO-FIFO': (0.0, True), 'var_FIFO_vs_theory': (10.0691, True), 'var_LIFO_vs_theory': (47.066, True)} varF/L 10.069 47.066
+V2 c8_rho0.9 {'wq_FIFO': (0.8861, True), 'wq_LIFO': (0.8884, True), 'wq_ALIFO': (0.8861, True), 'paired_diff_LIFO-FIFO': (0.0023, True), 'paired_diff_ALIFO-FIFO': (0.0, True)} varF/L 1.458 22.41
+V3 lam0.5_nu1.0 True 0.9993 1.0 1.0 True
+V3 lam0.7_nu0.5 True 4.9167 4.9 4.9 True
+V3 lam0.5_nu0.25 True 2.5001 2.5 2.5 True
+V3 lam0.9_nu2.0 True 12.0846 12.15 12.15 True

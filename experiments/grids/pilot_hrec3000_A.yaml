@@ -1,0 +1,29 @@
+stage: pilot
+tag: hrec3000_A
+base_config: configs/base_r1_fifo_off_exp.yaml
+set:
+  proto.trigger_mult: 1.5
+  proto.trigger_len: 25.0
+  proto.h_rec: 3000.0
+sweep: {}
+rho:
+- 0.3
+- 0.35
+- 0.4
+- 0.45
+- 0.5
+- 0.55
+- 0.6
+- 0.65
+- 0.7
+- 0.75
+- 0.775
+- 0.8
+- 0.825
+- 0.85
+- 0.875
+- 0.9
+- 0.95
+protocols:
+- A
+replicates: 40

@@ -1,0 +1,15 @@
+# Основной прогон, этап 1: 72 конфигурации, грубая сетка ρ 0,20..1,00 шаг 0,05, протоколы A и B, R = 40
+# Параметры: PREREGISTRATION.md, «Параметры, зафиксированные на G3». Seed = 1000000 + номер задачи (D-015, D-018).
+stage: main
+tag: m_scr
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+sweep:
+  R: [R0, R1, R2, R3]
+  Q: [FIFO, LIFO, ALIFO]
+  D: ["off", "on"]
+  S: [Exp, LogN, Pareto]
+rho_parts:
+  - {start: 0.20, stop: 1.00, step: 0.05}
+protocols: [A, B]
+replicates: 40

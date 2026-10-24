@@ -1,0 +1,238 @@
+# Скрининг (R = 8 реплик на точку, ρ = 0,20…1,00 шаг 0,05, триггер (1,5; 25), bootstrap 2000)
+
+Конфигураций не-R0: 54; точек ρ на протокол: A 17-17, B 17-17; реплик в A/B на конфигурацию 136/136
+     R      Q    D       S   fold fold_cens    rel rel_cens  delta   d_lo   d_hi  maxP_A  maxP_B     N1     N2            cls
+0   R1  ALIFO  off     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+1   R2  ALIFO  off     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+2   R3  ALIFO  off     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+3   R1   FIFO  off     Exp  0.850      none  0.340     none  0.510  0.475  0.541   1.000   1.000   True   True           meta
+4   R2   FIFO  off     Exp  0.857      none  0.334     none  0.523  0.496  0.552   1.000   1.000   True   True           meta
+5   R3   FIFO  off     Exp  0.971      none  0.950     none  0.021  0.000  0.043   1.000   1.000  False  False  no_hysteresis
+6   R1   LIFO  off     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+7   R2   LIFO  off     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+8   R3   LIFO  off     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+9   R1  ALIFO   on     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+10  R2  ALIFO   on     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+11  R3  ALIFO   on     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+12  R1   FIFO   on     Exp  0.856      none  0.587     none  0.269  0.237  0.300   1.000   1.000   True   True           meta
+13  R2   FIFO   on     Exp  0.844      none  0.590     none  0.254  0.219  0.284   1.000   1.000   True   True           meta
+14  R3   FIFO   on     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.125   0.000  False  False     no_failure
+15  R1   LIFO   on     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+16  R2   LIFO   on     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+17  R3   LIFO   on     Exp  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+18  R1  ALIFO  off    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+19  R2  ALIFO  off    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+20  R3  ALIFO  off    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+21  R1   FIFO  off    LogN  0.788      none  0.450     none  0.338  0.300  0.375   1.000   1.000   True   True           meta
+22  R2   FIFO  off    LogN  0.794      none  0.437     none  0.356  0.322  0.394   1.000   1.000   True   True           meta
+23  R3   FIFO  off    LogN  0.964      none  0.967     none -0.003 -0.027  0.029   0.875   1.000  False  False  no_hysteresis
+24  R1   LIFO  off    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+25  R2   LIFO  off    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+26  R3   LIFO  off    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+27  R1  ALIFO   on    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+28  R2  ALIFO   on    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+29  R3  ALIFO   on    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+30  R1   FIFO   on    LogN  0.800      none  0.781     none  0.019 -0.016  0.050   1.000   1.000  False  False  no_hysteresis
+31  R2   FIFO   on    LogN  0.812      none  0.725     none  0.087  0.056  0.119   1.000   1.000   True  False           meta
+32  R3   FIFO   on    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+33  R1   LIFO   on    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+34  R2   LIFO   on    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+35  R3   LIFO   on    LogN  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+36  R1  ALIFO  off  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+37  R2  ALIFO  off  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+38  R3  ALIFO  off  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+39  R1   FIFO  off  Pareto  0.875      none  0.306     none  0.569  0.535  0.604   1.000   1.000   True   True           meta
+40  R2   FIFO  off  Pareto  0.850      none  0.329     none  0.521  0.491  0.551   1.000   1.000   True   True           meta
+41  R3   FIFO  off  Pareto  0.971      none  0.963     none  0.009 -0.016  0.035   1.000   0.875  False  False  no_hysteresis
+42  R1   LIFO  off  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+43  R2   LIFO  off  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+44  R3   LIFO  off  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+45  R1  ALIFO   on  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+46  R2  ALIFO   on  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+47  R3  ALIFO   on  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+48  R1   FIFO   on  Pareto  0.894      none  0.425     none  0.469  0.440  0.498   1.000   1.000   True   True           meta
+49  R2   FIFO   on  Pareto  0.888      none  0.419     none  0.469  0.439  0.500   1.000   1.000   True   True           meta
+50  R3   FIFO   on  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.125   0.125  False  False     no_failure
+51  R1   LIFO   on  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+52  R2   LIFO   on  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+53  R3   LIFO   on  Pareto  1.000     right  1.000    right  0.000  0.000  0.000   0.000   0.000  False  False     no_failure
+
+N1 (fold<1 и нижняя граница ДИ Δ > 0): 11 из 54
+N2 (fold<1 и Δ ≥ 0,1): 10 из 54
+Классы: {'no_failure': 39, 'meta': 11, 'no_hysteresis': 4}
+Цензурировано порогов: справа 78, слева 0 из 108 (ρ_fold справа 39, ρ_release справа 39)
+
+Маргинальная таблица по R:
+ R  n  N1  N2  fold_cens  rel_cens
+R1 18   5   5         12        12
+R2 18   6   5         12        12
+R3 18   0   0         15        15
+
+Маргинальная таблица по Q:
+    Q  n  N1  N2  fold_cens  rel_cens
+ALIFO 18   0   0         18        18
+ FIFO 18  11  10          3         3
+ LIFO 18   0   0         18        18
+
+Маргинальная таблица по D:
+  D  n  N1  N2  fold_cens  rel_cens
+off 27   6   6         18        18
+ on 27   5   4         21        21
+
+Маргинальная таблица по S:
+     S  n  N1  N2  fold_cens  rel_cens
+   Exp 18   4   4         13        13
+  LogN 18   3   2         13        13
+Pareto 18   4   4         13        13
+
+Маргинальная таблица по R×Q:
+ R     Q  n  N1  N2  fold_cens  rel_cens
+R1 ALIFO  6   0   0          6         6
+R1  FIFO  6   5   5          0         0
+R1  LIFO  6   0   0          6         6
+R2 ALIFO  6   0   0          6         6
+R2  FIFO  6   6   5          0         0
+R2  LIFO  6   0   0          6         6
+R3 ALIFO  6   0   0          6         6
+R3  FIFO  6   0   0          3         3
+R3  LIFO  6   0   0          6         6
+
+Маргинальная таблица по Q×D:
+    Q   D  n  N1  N2  fold_cens  rel_cens
+ALIFO off  9   0   0          9         9
+ALIFO  on  9   0   0          9         9
+ FIFO off  9   6   6          0         0
+ FIFO  on  9   5   4          3         3
+ LIFO off  9   0   0          9         9
+ LIFO  on  9   0   0          9         9
+
+Маргинальная таблица по Q×S:
+    Q      S  n  N1  N2  fold_cens  rel_cens
+ALIFO    Exp  6   0   0          6         6
+ALIFO   LogN  6   0   0          6         6
+ALIFO Pareto  6   0   0          6         6
+ FIFO    Exp  6   4   4          1         1
+ FIFO   LogN  6   3   2          1         1
+ FIFO Pareto  6   4   4          1         1
+ LIFO    Exp  6   0   0          6         6
+ LIFO   LogN  6   0   0          6         6
+ LIFO Pareto  6   0   0          6         6
+
+Маргинальная таблица по R×D:
+ R   D  n  N1  N2  fold_cens  rel_cens
+R1 off  9   3   3          6         6
+R1  on  9   2   2          6         6
+R2 off  9   3   3          6         6
+R2  on  9   3   2          6         6
+R3 off  9   0   0          6         6
+R3  on  9   0   0          9         9
+
+Маргинальная таблица по R×S:
+ R      S  n  N1  N2  fold_cens  rel_cens
+R1    Exp  6   2   2          4         4
+R1   LogN  6   1   1          4         4
+R1 Pareto  6   2   2          4         4
+R2    Exp  6   2   2          4         4
+R2   LogN  6   2   1          4         4
+R2 Pareto  6   2   2          4         4
+R3    Exp  6   0   0          5         5
+R3   LogN  6   0   0          5         5
+R3 Pareto  6   0   0          5         5
+
+Маргинальная таблица по D×S:
+  D      S  n  N1  N2  fold_cens  rel_cens
+off    Exp  9   2   2          6         6
+off   LogN  9   2   2          6         6
+off Pareto  9   2   2          6         6
+ on    Exp  9   2   2          7         7
+ on   LogN  9   1   0          7         7
+ on Pareto  9   2   2          7         7
+
+Полная таблица R×Q (строки) × D×S (колонки): N1 (Δ точечная)
+DS       off/Exp off/LogN off/Pareto on/Exp on/LogN on/Pareto
+RQ                                                           
+R1/ALIFO       -        -          -      -       -         -
+R1/FIFO     0.51     0.34       0.57   0.27       -      0.47
+R1/LIFO        -        -          -      -       -         -
+R2/ALIFO       -        -          -      -       -         -
+R2/FIFO     0.52     0.36       0.52   0.25    0.09      0.47
+R2/LIFO        -        -          -      -       -         -
+R3/ALIFO       -        -          -      -       -         -
+R3/FIFO        -        -          -      -       -         -
+R3/LIFO        -        -          -      -       -         -
+
+Согласие со скринингом по 10 конфигурациям части 2 (там 40 реплик, здесь 8):
+               cfg  delta40  delta8  fold40  fold8  rel40  rel8  N1_40  N1_8  N2_40  N2_8
+   R1/FIFO/off/Exp    0.516   0.510   0.853  0.850  0.338 0.340   True  True   True  True
+  R1/FIFO/off/LogN    0.357   0.338   0.808  0.788  0.451 0.450   True  True   True  True
+R1/FIFO/off/Pareto    0.568   0.569   0.874  0.875  0.306 0.306   True  True   True  True
+   R2/FIFO/off/Exp    0.522   0.523   0.861  0.857  0.338 0.334   True  True   True  True
+   R3/FIFO/off/Exp    0.002   0.021   0.960  0.971  0.958 0.950  False False  False False
+   R1/LIFO/off/Exp    0.000   0.000   1.000  1.000  1.000 1.000  False False  False False
+  R1/ALIFO/off/Exp    0.000   0.000   1.000  1.000  1.000 1.000  False False  False False
+    R1/FIFO/on/Exp    0.262   0.269   0.862  0.856  0.599 0.587   True  True   True  True
+  R3/ALIFO/on/LogN    0.000   0.000   1.000  1.000  1.000 1.000  False False  False False
+ R2/LIFO/on/Pareto    0.000   0.000   1.000  1.000  1.000 1.000  False False  False False
+Совпадение N1: 10 из 10; N2: 10 из 10; max|Δ8−Δ40| = 0.020
+
+# Контроль R0 (ρ = 0,80; 0,90; 0,95; 1,00; 8 реплик)
+                cfg  A_fail<=0.95  A_n<=0.95  B_fail<=0.95  B_n<=0.95  A_fail@1.0  B_fail@1.0  n@1.0
+   R0/ALIFO/off/Exp             0         24             0         24           0           0      8
+  R0/ALIFO/off/LogN             0         24             0         24           0           0      8
+R0/ALIFO/off/Pareto             0         24             0         24           0           0      8
+    R0/ALIFO/on/Exp             0         24             0         24           0           0      8
+   R0/ALIFO/on/LogN             0         24             0         24           0           0      8
+ R0/ALIFO/on/Pareto             0         24             0         24           0           0      8
+    R0/FIFO/off/Exp             0         32             1         32           3           3      8
+   R0/FIFO/off/LogN             1         24             0         24           1           2      8
+ R0/FIFO/off/Pareto             0         24             0         24           8           5      8
+     R0/FIFO/on/Exp             0         24             0         24           0           0      8
+    R0/FIFO/on/LogN             0         24             0         24           0           0      8
+  R0/FIFO/on/Pareto             0         24             0         24           0           0      8
+    R0/LIFO/off/Exp             0         24             0         24           0           0      8
+   R0/LIFO/off/LogN             0         24             0         24           0           0      8
+ R0/LIFO/off/Pareto             0         24             0         24           0           0      8
+     R0/LIFO/on/Exp             0         24             0         24           0           0      8
+    R0/LIFO/on/LogN             0         24             0         24           0           0      8
+  R0/LIFO/on/Pareto             0         24             0         24           0           0      8
+R0: отказов при ρ ≤ 0,95: A 1 из 440, B 1 из 440; при ρ = 1,0: A 12 из 144, B 10 из 144
+
+# H1: ячейки R×Q×D, Δ при Exp и LogN
+Ячеек без R0: 18; N1 при Exp 4, при LogN 3, при Pareto 4; при Exp и LogN одновременно 3; хотя бы в одном 4
+N2 (Δ ≥ 0,1) при Exp 4, LogN 2; одновременно 2
+(а) 18 ячеек без R0: τ-b = 0.627, bootstrap по ячейкам [-0.109; 1.000] (валидных 1997/2000)
+(б) 24 ячейки, R0 с Δ = 0: τ-b = 0.619, bootstrap по ячейкам [-0.118; 1.000] (валидных 1994/2000)
+(в) ячейки, невырожденные хотя бы в одном S (4): τ-b = 0.667, bootstrap по ячейкам [-1.000; 1.000] (валидных 1976/2000)
+(г) невырожденные в обоих S (3): τ-b = 1.000, bootstrap по ячейкам [1.000; 1.000] (валидных 1758/2000)
+Δ (точечная) по ячейкам:
+S               Exp   LogN  Pareto  N1_Exp  N1_LogN
+cell                                               
+R1/ALIFO/off  0.000  0.000   0.000   False    False
+R1/ALIFO/on   0.000  0.000   0.000   False    False
+R1/FIFO/off   0.510  0.338   0.569    True     True
+R1/FIFO/on    0.269  0.019   0.469    True    False
+R1/LIFO/off   0.000  0.000   0.000   False    False
+R1/LIFO/on    0.000  0.000   0.000   False    False
+R2/ALIFO/off  0.000  0.000   0.000   False    False
+R2/ALIFO/on   0.000  0.000   0.000   False    False
+R2/FIFO/off   0.523  0.356   0.521    True     True
+R2/FIFO/on    0.254  0.087   0.469    True     True
+R2/LIFO/off   0.000  0.000   0.000   False    False
+R2/LIFO/on    0.000  0.000   0.000   False    False
+R3/ALIFO/off  0.000  0.000   0.000   False    False
+R3/ALIFO/on   0.000  0.000   0.000   False    False
+R3/FIFO/off   0.021 -0.003   0.009   False    False
+R3/FIFO/on    0.000  0.000   0.000   False    False
+R3/LIFO/off   0.000  0.000   0.000   False    False
+R3/LIFO/on    0.000  0.000   0.000   False    False
+
+# H2: контраст взаимодействия (R3 vs R2) × (ALIFO vs FIFO) по (D, S)
+  D      S  d_R3ALIFO  d_R3FIFO  d_R2ALIFO  d_R2FIFO  contrast  N1_R3ALIFO  N1_R3FIFO  N1_R2ALIFO  N1_R2FIFO  all4_N1
+off    Exp        0.0     0.021        0.0     0.523     0.501       False      False       False       True    False
+off   LogN        0.0    -0.003        0.0     0.356     0.359       False      False       False       True    False
+off Pareto        0.0     0.009        0.0     0.521     0.512       False      False       False       True    False
+ on    Exp        0.0     0.000        0.0     0.254     0.254       False      False       False       True    False
+ on   LogN        0.0     0.000        0.0     0.087     0.087       False      False       False       True    False
+ on Pareto        0.0     0.000        0.0     0.469     0.469       False      False       False       True    False
+Ячеек (D,S) из 6: все 4 Δ невырождены 0; R3×ALIFO невырождена 0; R3×FIFO невырождена 0; R2×ALIFO 0; R2×FIFO 6
+Контраст < 0 в 0 из 6; для Exp/LogN при D усреднённом: Exp 0.378, LogN 0.223

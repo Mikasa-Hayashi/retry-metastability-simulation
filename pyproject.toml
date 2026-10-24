@@ -1,0 +1,13 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint.per-file-ignores]
+# скрипты независимой валидации: сохранены как использованные при проверке
+"analysis/validation_*.py" = ["E701", "E702", "E731", "E741", "F841", "B007", "C408", "RUF046"]
+# разовые скрипты pilot: сохранены в виде, в котором выпускали результаты
+"analysis/pilot*.py" = ["RUF059", "SIM115", "F841", "B023"]

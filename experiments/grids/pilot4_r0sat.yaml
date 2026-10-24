@@ -1,0 +1,13 @@
+# Часть 4, п. 7: R0 против R3 на сетке 0,90-1,05 шаг 0,01 (насыщение или эффект повторов), 100 реплик (реплики 0-99 общего блока)
+stage: pilot
+tag: p4_r0sat
+seed_mode: crn
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+sweep:
+  R: [R0, R3]
+  S: [Exp, LogN, Pareto]
+rho_parts:
+  - {start: 0.90, stop: 1.05, step: 0.01}
+protocols: [A, B]
+replicates: 100

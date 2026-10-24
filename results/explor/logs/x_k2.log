@@ -1,0 +1,18 @@
+[explor] 500/8080 ok=500 err=0 elapsed=34s eta=519s
+[explor] 1000/8080 ok=1000 err=0 elapsed=104s eta=736s
+[explor] 1500/8080 ok=1500 err=0 elapsed=189s eta=828s
+[explor] 2000/8080 ok=2000 err=0 elapsed=215s eta=652s
+[explor] 2500/8080 ok=2500 err=0 elapsed=282s eta=630s
+[explor] 3000/8080 ok=3000 err=0 elapsed=343s eta=581s
+[explor] 3500/8080 ok=3500 err=0 elapsed=382s eta=500s
+[explor] 4000/8080 ok=4000 err=0 elapsed=496s eta=506s
+[explor] 4500/8080 ok=4500 err=0 elapsed=557s eta=443s
+[explor] 5000/8080 ok=5000 err=0 elapsed=692s eta=426s
+[explor] 5500/8080 ok=5500 err=0 elapsed=871s eta=409s
+[explor] 6000/8080 ok=6000 err=0 elapsed=915s eta=317s
+[explor] 6500/8080 ok=6500 err=0 elapsed=1033s eta=251s
+[explor] 7000/8080 ok=7000 err=0 elapsed=1164s eta=180s
+[explor] 7500/8080 ok=7500 err=0 elapsed=1226s eta=95s
+[explor] 8000/8080 ok=8000 err=0 elapsed=1436s eta=14s
+[explor] 8080/8080 ok=8080 err=0 elapsed=1486s eta=0s
+{'start': '2026-10-24 13:29:09', 'end': '2026-10-24 13:53:55', 'elapsed_s': 1486.295646905899, 'workers': 7, 'n_tasks': 8080, 'n_ok': 8080, 'n_err': 0, 'tag_filter': 'x_k2', 'git_commit': '2b6df209f1ee04577613f01a54acd40171a49e0e-dirty', 'src_hash': 'fa646ca89ce0cb7da87d0e0a733e0f66760d2b7ecb643f80aa677ef6839244bd', 'versions': 'python=3.12.0;numpy=2.5.4;scipy=1.18.1;pandas=2.3.3;pyarrow=26.0.0;pydantic=2.14.1;pyyaml=6.0.3'}

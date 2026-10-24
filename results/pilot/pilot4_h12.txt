@@ -1,0 +1,90 @@
+
+# H1, Δ(ρ ≤ 1): ячеек всего 24 (из них без R0 18)
+N1 при Exp 4, LogN 4, Pareto 4; Exp и LogN одновременно 4; хотя бы в одном 4
+N2 (Δ ≥ 0,1) при Exp 4, LogN 2; одновременно 2
+(а) 18 ячеек без R0: τ-b = 0.973, bootstrap по ячейкам [0.890; 1.000] (валидных 1997/2000)
+(б) 24 ячейки с R0: τ-b = 0.889, bootstrap по ячейкам [0.663; 1.000] (валидных 1995/2000)
+(в) невырожденные хотя бы в одном S (4): τ-b = 0.667, bootstrap по ячейкам [-1.000; 1.000] (валидных 1976/2000)
+Доля пар ячеек со связкой (ties) в Δ(Exp): 0.67; число уникальных значений Δ(Exp) 4 из 18
+S               Exp   LogN  Pareto  N1_Exp  N1_LogN
+cell                                               
+R0/ALIFO/off  0.000  0.000   0.000   False    False
+R0/ALIFO/on   0.000  0.000   0.000   False    False
+R0/FIFO/off  -0.004  0.000  -0.001   False    False
+R0/FIFO/on    0.000  0.000   0.000   False    False
+R0/LIFO/off   0.000  0.000   0.000   False    False
+R0/LIFO/on    0.000  0.000   0.000   False    False
+R1/ALIFO/off  0.000  0.000   0.000   False    False
+R1/ALIFO/on   0.000  0.000   0.000   False    False
+R1/FIFO/off   0.521  0.342   0.567    True     True
+R1/FIFO/on    0.258  0.044   0.445    True     True
+R1/LIFO/off   0.000  0.000   0.000   False    False
+R1/LIFO/on    0.000  0.000   0.000   False    False
+R2/ALIFO/off  0.000  0.000   0.000   False    False
+R2/ALIFO/on   0.000  0.000   0.000   False    False
+R2/FIFO/off   0.522  0.331   0.564    True     True
+R2/FIFO/on    0.289  0.078   0.461    True     True
+R2/LIFO/off   0.000  0.000   0.000   False    False
+R2/LIFO/on    0.000  0.000   0.000   False    False
+R3/ALIFO/off  0.000  0.000   0.000   False    False
+R3/ALIFO/on   0.000  0.000   0.000   False    False
+R3/FIFO/off  -0.002 -0.003   0.000   False    False
+R3/FIFO/on    0.000  0.000   0.000   False    False
+R3/LIFO/off   0.000  0.000   0.000   False    False
+R3/LIFO/on    0.000  0.000   0.000   False    False
+
+# H2, Δ(ρ ≤ 1): контраст C = Δ(R3,ALIFO) − Δ(R3,FIFO) − Δ(R2,ALIFO) + Δ(R2,FIFO)
+  D      S  d_R3ALIFO  d_R3FIFO  d_R2ALIFO  d_R2FIFO  contrast
+off    Exp        0.0    -0.002        0.0     0.522     0.523
+off   LogN        0.0    -0.003        0.0     0.331     0.334
+off Pareto        0.0     0.000        0.0     0.564     0.564
+ on    Exp        0.0     0.000        0.0     0.289     0.289
+ on   LogN        0.0     0.000        0.0     0.078     0.078
+ on Pareto        0.0     0.000        0.0     0.461     0.461
+C < 0 в 0 из 6; min 0.078, max 0.564
+Одиночные меры (R3/FIFO и R2/ALIFO) дают |Δ| < 0,1: 6 из 6
+
+# H1, Δ_ext (ρ ≤ 2,5): ячеек всего 24 (из них без R0 18)
+N1 при Exp 4, LogN 4, Pareto 5; Exp и LogN одновременно 4; хотя бы в одном 4
+N2 (Δ ≥ 0,1) при Exp 4, LogN 2; одновременно 2
+(а) 18 ячеек без R0: τ-b = 0.399, bootstrap по ячейкам [-0.073; 0.764] (валидных 2000/2000)
+(б) 24 ячейки с R0: τ-b = 0.341, bootstrap по ячейкам [0.004; 0.653] (валидных 2000/2000)
+(в) невырожденные хотя бы в одном S (4): τ-b = 0.667, bootstrap по ячейкам [-1.000; 1.000] (валидных 1964/2000)
+Доля пар ячеек со связкой (ties) в Δ(Exp): 0.00; число уникальных значений Δ(Exp) 6 из 18
+S               Exp   LogN  Pareto  N1_Exp  N1_LogN
+cell                                               
+R0/ALIFO/off -0.001 -0.003  -0.014   False    False
+R0/ALIFO/on  -0.002 -0.002  -0.002   False    False
+R0/FIFO/off  -0.002  0.004   0.001   False    False
+R0/FIFO/on    0.005 -0.011   0.008   False    False
+R0/LIFO/off  -0.006  0.001  -0.010   False    False
+R0/LIFO/on    0.001 -0.002  -0.000   False    False
+R1/ALIFO/off -0.008 -0.006  -0.002   False    False
+R1/ALIFO/on   0.006  0.009  -0.003   False    False
+R1/FIFO/off   0.521  0.342   0.568    True     True
+R1/FIFO/on    0.258  0.044   0.445    True     True
+R1/LIFO/off  -0.001 -0.020  -0.006   False    False
+R1/LIFO/on   -0.002  0.006   0.005   False    False
+R2/ALIFO/off -0.008 -0.003  -0.005   False    False
+R2/ALIFO/on  -0.003 -0.002   0.003   False    False
+R2/FIFO/off   0.521  0.331   0.564    True     True
+R2/FIFO/on    0.289  0.078   0.461    True     True
+R2/LIFO/off  -0.012 -0.004  -0.008   False    False
+R2/LIFO/on   -0.008 -0.010  -0.004   False    False
+R3/ALIFO/off -0.002 -0.020  -0.010   False    False
+R3/ALIFO/on  -0.008 -0.016  -0.006   False    False
+R3/FIFO/off  -0.002 -0.002   0.002   False    False
+R3/FIFO/on   -0.006 -0.024   0.001   False    False
+R3/LIFO/off  -0.001 -0.016  -0.005   False    False
+R3/LIFO/on    0.003 -0.024  -0.005   False    False
+
+# H2, Δ_ext (ρ ≤ 2,5): контраст C = Δ(R3,ALIFO) − Δ(R3,FIFO) − Δ(R2,ALIFO) + Δ(R2,FIFO)
+  D      S  d_R3ALIFO  d_R3FIFO  d_R2ALIFO  d_R2FIFO  contrast
+off    Exp     -0.002    -0.002     -0.008     0.521     0.528
+off   LogN     -0.020    -0.002     -0.003     0.331     0.317
+off Pareto     -0.010     0.002     -0.005     0.564     0.557
+ on    Exp     -0.008    -0.006     -0.003     0.289     0.289
+ on   LogN     -0.016    -0.024     -0.002     0.078     0.088
+ on Pareto     -0.006     0.001      0.003     0.461     0.451
+C < 0 в 0 из 6; min 0.088, max 0.557
+Одиночные меры (R3/FIFO и R2/ALIFO) дают |Δ| < 0,1: 6 из 6

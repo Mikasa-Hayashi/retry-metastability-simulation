@@ -1,0 +1,26 @@
+# Эксплораторно (В4/К1): сильный триггер на 12 «нулевых» ячейках основного прогона.
+# Ячейки: R3/FIFO x D x S(Exp, LogN) = 4; LIFO и ALIFO (повторы R1) x D x S(Exp, LogN) = 8. Протокол A, R = 40.
+# Триггеры (m_s; D_s) = (3; 50) и (4; 100).
+stage: explor
+tag: x_trg
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+cells:
+  - {R: R3, Q: FIFO, D: "off", S: Exp}
+  - {R: R3, Q: FIFO, D: "off", S: LogN}
+  - {R: R3, Q: FIFO, D: "on", S: Exp}
+  - {R: R3, Q: FIFO, D: "on", S: LogN}
+  - {R: R1, Q: LIFO, D: "off", S: Exp}
+  - {R: R1, Q: LIFO, D: "off", S: LogN}
+  - {R: R1, Q: LIFO, D: "on", S: Exp}
+  - {R: R1, Q: LIFO, D: "on", S: LogN}
+  - {R: R1, Q: ALIFO, D: "off", S: Exp}
+  - {R: R1, Q: ALIFO, D: "off", S: LogN}
+  - {R: R1, Q: ALIFO, D: "on", S: Exp}
+  - {R: R1, Q: ALIFO, D: "on", S: LogN}
+variants:
+  - {name: trg3_50, set: {proto.trigger_mult: 3.0, proto.trigger_len: 50.0}, protocols: [A]}
+  - {name: trg4_100, set: {proto.trigger_mult: 4.0, proto.trigger_len: 100.0}, protocols: [A]}
+rho_parts:
+  - {start: 0.20, stop: 1.00, step: 0.05}
+replicates: 40

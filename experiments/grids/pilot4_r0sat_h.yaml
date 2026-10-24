@@ -1,0 +1,13 @@
+# Часть 4, п. 7 (эксплораторно): та же проверка при H_rec = 3000 и 6000 (R0 и R3, Exp): критическое замедление у ρ=1
+stage: pilot
+tag: p4_r0sat_h
+seed_mode: crn
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+sweep:
+  R: [R0, R3]
+  proto.h_rec: [3000.0, 6000.0]
+rho_parts:
+  - {start: 0.90, stop: 1.05, step: 0.01}
+protocols: [A, B]
+replicates: 100

@@ -1,0 +1,8 @@
+stage: pilot
+tag: p2_cfg03
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, R: R1, Q: FIFO, D: "off", S: Pareto}
+sweep: {}
+rho: {start: 0.20, stop: 1.00, step: 0.05}
+protocols: [A, B]
+replicates: 40

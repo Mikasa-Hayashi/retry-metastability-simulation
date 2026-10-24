@@ -1,0 +1,13 @@
+# Вспомогательная область перегрузки ρ > 1: 72 конфигурации, A и B, R = 16 (без уточнения)
+stage: main
+tag: m_ext
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+sweep:
+  R: [R0, R1, R2, R3]
+  Q: [FIFO, LIFO, ALIFO]
+  D: ["off", "on"]
+  S: [Exp, LogN, Pareto]
+rho_list: [1.05, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5]
+protocols: [A, B]
+replicates: 16

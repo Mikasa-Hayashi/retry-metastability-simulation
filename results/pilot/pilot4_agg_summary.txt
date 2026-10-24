@@ -1,0 +1,460 @@
+# pilot4 agg: конфигураций 288; реплик в точке (min) 40
+
+## Δ(ρ ≤ 1): число N1 / N2 по (m, T) × Q
+ m    T     Q  n  N1  N2
+ 3  5.0 ALIFO 48   8   6
+ 3  5.0  FIFO 12   8   6
+ 3  5.0  LIFO 12   0   0
+ 3 10.0 ALIFO 48   8   6
+ 3 10.0  FIFO 12   8   6
+ 3 10.0  LIFO 12   0   0
+ 6  5.0 ALIFO 48   8   8
+ 6  5.0  FIFO 12   8   8
+ 6  5.0  LIFO 12   0   0
+ 6 10.0 ALIFO 48   8   7
+ 6 10.0  FIFO 12   8   7
+ 6 10.0  LIFO 12   0   0
+
+## Δ(ρ ≤ 1): по (m, T) × R
+ m    T  R  n  N1  N2
+ 3  5.0 R1 24   8   6
+ 3  5.0 R2 24   8   6
+ 3  5.0 R3 24   0   0
+ 3 10.0 R1 24   8   6
+ 3 10.0 R2 24   8   6
+ 3 10.0 R3 24   0   0
+ 6  5.0 R1 24   8   8
+ 6  5.0 R2 24   8   8
+ 6  5.0 R3 24   0   0
+ 6 10.0 R1 24   8   6
+ 6 10.0 R2 24   8   8
+ 6 10.0 R3 24   0   0
+
+## Δ(ρ ≤ 1): ALIFO по θ_q × (m, T)
+ theta_q  m    T  n  N1  N2  delta_mean  delta_max
+    0.25  3  5.0 12   0   0       0.000      0.000
+    0.25  3 10.0 12   0   0       0.000      0.000
+    0.25  6  5.0 12   0   0       0.000      0.000
+    0.25  6 10.0 12   0   0       0.000      0.000
+    0.50  3  5.0 12   0   0       0.000      0.000
+    0.50  3 10.0 12   0   0       0.000      0.000
+    0.50  6  5.0 12   0   0       0.000      0.000
+    0.50  6 10.0 12   0   0       0.000      0.000
+    0.75  3  5.0 12   0   0       0.000      0.000
+    0.75  3 10.0 12   0   0       0.000      0.000
+    0.75  6  5.0 12   0   0       0.000      0.000
+    0.75  6 10.0 12   0   0       0.000      0.000
+    1.00  3  5.0 12   8   6       0.166      0.430
+    1.00  3 10.0 12   8   6       0.198      0.522
+    1.00  6  5.0 12   8   8       0.254      0.505
+    1.00  6 10.0 12   8   7       0.282      0.653
+
+## Δ(ρ ≤ 1): информативные (N1) ячейки среди LIFO, ALIFO, R3
+ R     Q   D    S  m    T  theta_q  le1_fold  le1_rel  le1_delta  le1_d_lo  le1_d_hi
+R1 ALIFO off  Exp  3  5.0      1.0     0.705    0.276      0.430     0.422     0.437
+R1 ALIFO off  Exp  3 10.0      1.0     0.853    0.332      0.520     0.513     0.528
+R1 ALIFO off  Exp  6  5.0      1.0     0.705    0.200      0.505     0.499     0.512
+R1 ALIFO off  Exp  6 10.0      1.0     0.853    0.211      0.641     0.633     0.650
+R1 ALIFO off LogN  3  5.0      1.0     0.645    0.304      0.342     0.334     0.349
+R1 ALIFO off LogN  3 10.0      1.0     0.783    0.441      0.342     0.331     0.353
+R1 ALIFO off LogN  6  5.0      1.0     0.645    0.200      0.445     0.437     0.452
+R1 ALIFO off LogN  6 10.0      1.0     0.783    0.313      0.470     0.461     0.480
+R1 ALIFO  on  Exp  3  5.0      1.0     0.705    0.536      0.169     0.162     0.177
+R1 ALIFO  on  Exp  3 10.0      1.0     0.853    0.595      0.258     0.250     0.266
+R1 ALIFO  on  Exp  6  5.0      1.0     0.705    0.379      0.326     0.319     0.334
+R1 ALIFO  on  Exp  6 10.0      1.0     0.853    0.519      0.334     0.326     0.342
+R1 ALIFO  on LogN  3  5.0      1.0     0.658    0.618      0.040     0.033     0.048
+R1 ALIFO  on LogN  3 10.0      1.0     0.804    0.759      0.044     0.036     0.053
+R1 ALIFO  on LogN  6  5.0      1.0     0.652    0.470      0.182     0.174     0.190
+R1 ALIFO  on LogN  6 10.0      1.0     0.794    0.699      0.095     0.086     0.104
+R2 ALIFO off  Exp  3  5.0      1.0     0.704    0.277      0.427     0.420     0.435
+R2 ALIFO off  Exp  3 10.0      1.0     0.853    0.331      0.522     0.514     0.530
+R2 ALIFO off  Exp  6  5.0      1.0     0.704    0.200      0.504     0.496     0.510
+R2 ALIFO off  Exp  6 10.0      1.0     0.853    0.200      0.653     0.646     0.660
+R2 ALIFO off LogN  3  5.0      1.0     0.643    0.302      0.341     0.333     0.349
+R2 ALIFO off LogN  3 10.0      1.0     0.782    0.449      0.332     0.322     0.344
+R2 ALIFO off LogN  6  5.0      1.0     0.643    0.200      0.443     0.436     0.450
+R2 ALIFO off LogN  6 10.0      1.0     0.782    0.234      0.548     0.539     0.556
+R2 ALIFO  on  Exp  3  5.0      1.0     0.704    0.521      0.182     0.175     0.190
+R2 ALIFO  on  Exp  3 10.0      1.0     0.853    0.564      0.289     0.281     0.297
+R2 ALIFO  on  Exp  6  5.0      1.0     0.704    0.334      0.370     0.362     0.377
+R2 ALIFO  on  Exp  6 10.0      1.0     0.853    0.402      0.451     0.443     0.459
+R2 ALIFO  on LogN  3  5.0      1.0     0.655    0.590      0.064     0.057     0.072
+R2 ALIFO  on LogN  3 10.0      1.0     0.798    0.720      0.078     0.069     0.087
+R2 ALIFO  on LogN  6  5.0      1.0     0.650    0.377      0.273     0.266     0.280
+R2 ALIFO  on LogN  6 10.0      1.0     0.789    0.598      0.191     0.181     0.200
+
+## Δ_ext (ρ ≤ 1,5): число N1 / N2 по (m, T) × Q
+ m    T     Q  n  N1  N2
+ 3  5.0 ALIFO 48   8   6
+ 3  5.0  FIFO 12   8   6
+ 3  5.0  LIFO 12   0   0
+ 3 10.0 ALIFO 48   8   6
+ 3 10.0  FIFO 12   8   6
+ 3 10.0  LIFO 12   0   0
+ 6  5.0 ALIFO 48   8   8
+ 6  5.0  FIFO 12   8   8
+ 6  5.0  LIFO 12   0   0
+ 6 10.0 ALIFO 48   8   7
+ 6 10.0  FIFO 12   8   7
+ 6 10.0  LIFO 12   0   0
+
+## Δ_ext (ρ ≤ 1,5): по (m, T) × R
+ m    T  R  n  N1  N2
+ 3  5.0 R1 24   8   6
+ 3  5.0 R2 24   8   6
+ 3  5.0 R3 24   0   0
+ 3 10.0 R1 24   8   6
+ 3 10.0 R2 24   8   6
+ 3 10.0 R3 24   0   0
+ 6  5.0 R1 24   8   8
+ 6  5.0 R2 24   8   8
+ 6  5.0 R3 24   0   0
+ 6 10.0 R1 24   8   6
+ 6 10.0 R2 24   8   8
+ 6 10.0 R3 24   0   0
+
+## Δ_ext (ρ ≤ 1,5): ALIFO по θ_q × (m, T)
+ theta_q  m    T  n  N1  N2  delta_mean  delta_max
+    0.25  3  5.0 12   0   0       0.000      0.000
+    0.25  3 10.0 12   0   0       0.000      0.000
+    0.25  6  5.0 12   0   0       0.000      0.000
+    0.25  6 10.0 12   0   0       0.000      0.000
+    0.50  3  5.0 12   0   0       0.000      0.000
+    0.50  3 10.0 12   0   0       0.000      0.000
+    0.50  6  5.0 12   0   0       0.000      0.000
+    0.50  6 10.0 12   0   0       0.000      0.000
+    0.75  3  5.0 12   0   0      -0.003      0.000
+    0.75  3 10.0 12   0   0       0.000      0.000
+    0.75  6  5.0 12   0   0      -0.003      0.000
+    0.75  6 10.0 12   0   0       0.000      0.000
+    1.00  3  5.0 12   8   6       0.164      0.430
+    1.00  3 10.0 12   8   6       0.195      0.522
+    1.00  6  5.0 12   8   8       0.252      0.505
+    1.00  6 10.0 12   8   7       0.279      0.653
+
+## Δ_ext (ρ ≤ 1,5): информативные (N1) ячейки среди LIFO, ALIFO, R3
+ R     Q   D    S  m    T  theta_q  ext_fold  ext_rel  ext_delta  ext_d_lo  ext_d_hi
+R1 ALIFO off  Exp  3  5.0      1.0     0.705    0.276      0.430     0.422     0.437
+R1 ALIFO off  Exp  3 10.0      1.0     0.853    0.332      0.520     0.512     0.528
+R1 ALIFO off  Exp  6  5.0      1.0     0.705    0.200      0.505     0.498     0.512
+R1 ALIFO off  Exp  6 10.0      1.0     0.853    0.211      0.641     0.633     0.650
+R1 ALIFO off LogN  3  5.0      1.0     0.645    0.304      0.342     0.334     0.349
+R1 ALIFO off LogN  3 10.0      1.0     0.783    0.441      0.342     0.331     0.353
+R1 ALIFO off LogN  6  5.0      1.0     0.645    0.200      0.445     0.437     0.451
+R1 ALIFO off LogN  6 10.0      1.0     0.783    0.313      0.470     0.461     0.480
+R1 ALIFO  on  Exp  3  5.0      1.0     0.705    0.536      0.169     0.161     0.177
+R1 ALIFO  on  Exp  3 10.0      1.0     0.853    0.595      0.258     0.250     0.266
+R1 ALIFO  on  Exp  6  5.0      1.0     0.705    0.379      0.326     0.319     0.334
+R1 ALIFO  on  Exp  6 10.0      1.0     0.853    0.519      0.334     0.325     0.342
+R1 ALIFO  on LogN  3  5.0      1.0     0.658    0.618      0.040     0.033     0.048
+R1 ALIFO  on LogN  3 10.0      1.0     0.804    0.759      0.044     0.036     0.053
+R1 ALIFO  on LogN  6  5.0      1.0     0.652    0.470      0.182     0.174     0.191
+R1 ALIFO  on LogN  6 10.0      1.0     0.794    0.699      0.095     0.086     0.104
+R2 ALIFO off  Exp  3  5.0      1.0     0.704    0.277      0.427     0.419     0.435
+R2 ALIFO off  Exp  3 10.0      1.0     0.853    0.331      0.522     0.513     0.530
+R2 ALIFO off  Exp  6  5.0      1.0     0.704    0.200      0.504     0.496     0.511
+R2 ALIFO off  Exp  6 10.0      1.0     0.853    0.200      0.653     0.646     0.659
+R2 ALIFO off LogN  3  5.0      1.0     0.643    0.302      0.341     0.333     0.349
+R2 ALIFO off LogN  3 10.0      1.0     0.782    0.449      0.332     0.321     0.343
+R2 ALIFO off LogN  6  5.0      1.0     0.643    0.200      0.443     0.436     0.450
+R2 ALIFO off LogN  6 10.0      1.0     0.782    0.234      0.548     0.540     0.556
+R2 ALIFO  on  Exp  3  5.0      1.0     0.704    0.521      0.182     0.174     0.190
+R2 ALIFO  on  Exp  3 10.0      1.0     0.853    0.564      0.289     0.281     0.297
+R2 ALIFO  on  Exp  6  5.0      1.0     0.704    0.334      0.370     0.362     0.377
+R2 ALIFO  on  Exp  6 10.0      1.0     0.853    0.402      0.451     0.443     0.459
+R2 ALIFO  on LogN  3  5.0      1.0     0.655    0.590      0.064     0.057     0.072
+R2 ALIFO  on LogN  3 10.0      1.0     0.798    0.720      0.078     0.070     0.087
+R2 ALIFO  on LogN  6  5.0      1.0     0.650    0.377      0.273     0.266     0.280
+R2 ALIFO  on LogN  6 10.0      1.0     0.789    0.598      0.191     0.182     0.200
+
+## Полная таблица по конфигурациям (Δ(ρ ≤ 1), Δ_ext, класс)
+ R     Q   D    S  m    T  theta_q  le1_fold  le1_rel  le1_delta  le1_d_lo        le1_cls  ext_delta        ext_cls  rho_star_A  rho_star_B  maxPA  maxPB
+R1 ALIFO off  Exp  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  3  5.0     1.00     0.705    0.276      0.430     0.422           meta      0.430           meta        0.70        0.28  1.000  1.000
+R1 ALIFO off  Exp  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  3 10.0     1.00     0.853    0.332      0.520     0.513           meta      0.520           meta        0.85        0.33  1.000  1.000
+R1 ALIFO off  Exp  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  6  5.0     1.00     0.705    0.200      0.505     0.499 B_always_fails      0.505 B_always_fails        0.70        0.20  1.000  1.000
+R1 ALIFO off  Exp  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off  Exp  6 10.0     1.00     0.853    0.211      0.641     0.633           meta      0.641           meta        0.85        0.22  1.000  1.000
+R1 ALIFO off LogN  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  3  5.0     1.00     0.645    0.304      0.342     0.334           meta      0.342           meta        0.65        0.31  1.000  1.000
+R1 ALIFO off LogN  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  3 10.0     1.00     0.783    0.441      0.342     0.331           meta      0.342           meta        0.79        0.44  1.000  1.000
+R1 ALIFO off LogN  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  6  5.0     1.00     0.645    0.200      0.445     0.437 B_always_fails      0.445 B_always_fails        0.65        0.20  1.000  1.000
+R1 ALIFO off LogN  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO off LogN  6 10.0     1.00     0.783    0.313      0.470     0.461           meta      0.470           meta        0.79        0.31  1.000  1.000
+R1 ALIFO  on  Exp  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.025  0.000
+R1 ALIFO  on  Exp  3  5.0     1.00     0.705    0.536      0.169     0.162           meta      0.169           meta        0.70        0.54  1.000  1.000
+R1 ALIFO  on  Exp  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  3 10.0     1.00     0.853    0.595      0.258     0.250           meta      0.258           meta        0.85        0.59  1.000  1.000
+R1 ALIFO  on  Exp  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  6  5.0     1.00     0.705    0.379      0.326     0.319           meta      0.326           meta        0.70        0.38  1.000  1.000
+R1 ALIFO  on  Exp  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on  Exp  6 10.0     1.00     0.853    0.519      0.334     0.326           meta      0.334           meta        0.85        0.52  1.000  1.000
+R1 ALIFO  on LogN  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.100  0.025
+R1 ALIFO  on LogN  3  5.0     1.00     0.658    0.618      0.040     0.033           meta      0.040           meta        0.66        0.62  1.000  1.000
+R1 ALIFO  on LogN  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  3 10.0     1.00     0.804    0.759      0.044     0.036           meta      0.044           meta        0.80        0.76  1.000  1.000
+R1 ALIFO  on LogN  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  6  5.0     1.00     0.652    0.470      0.182     0.174           meta      0.182           meta        0.66        0.45  1.000  1.000
+R1 ALIFO  on LogN  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1 ALIFO  on LogN  6 10.0     1.00     0.794    0.699      0.095     0.086           meta      0.095           meta        0.80        0.71  1.000  1.000
+R2 ALIFO off  Exp  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  3  5.0     1.00     0.704    0.277      0.427     0.420           meta      0.427           meta        0.70        0.28  1.000  1.000
+R2 ALIFO off  Exp  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  3 10.0     1.00     0.853    0.331      0.522     0.514           meta      0.522           meta        0.85        0.33  1.000  1.000
+R2 ALIFO off  Exp  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  6  5.0     1.00     0.704    0.200      0.504     0.496 B_always_fails      0.504 B_always_fails        0.70        0.20  1.000  1.000
+R2 ALIFO off  Exp  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off  Exp  6 10.0     1.00     0.853    0.200      0.653     0.646 B_always_fails      0.653 B_always_fails        0.85        0.20  1.000  1.000
+R2 ALIFO off LogN  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  3  5.0     1.00     0.643    0.302      0.341     0.333           meta      0.341           meta        0.65        0.31  1.000  1.000
+R2 ALIFO off LogN  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  3 10.0     1.00     0.782    0.449      0.332     0.322           meta      0.332           meta        0.78        0.45  1.000  1.000
+R2 ALIFO off LogN  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  6  5.0     1.00     0.643    0.200      0.443     0.436 B_always_fails      0.443 B_always_fails        0.65        0.20  1.000  1.000
+R2 ALIFO off LogN  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO off LogN  6 10.0     1.00     0.782    0.234      0.548     0.539           meta      0.548           meta        0.78        0.23  1.000  1.000
+R2 ALIFO  on  Exp  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  3  5.0     1.00     0.704    0.521      0.182     0.175           meta      0.182           meta        0.70        0.53  1.000  1.000
+R2 ALIFO  on  Exp  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  3 10.0     1.00     0.853    0.564      0.289     0.281           meta      0.289           meta        0.85        0.56  1.000  1.000
+R2 ALIFO  on  Exp  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  6  5.0     1.00     0.704    0.334      0.370     0.362           meta      0.370           meta        0.70        0.33  1.000  1.000
+R2 ALIFO  on  Exp  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on  Exp  6 10.0     1.00     0.853    0.402      0.451     0.443           meta      0.451           meta        0.85        0.40  1.000  1.000
+R2 ALIFO  on LogN  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.025  0.000
+R2 ALIFO  on LogN  3  5.0     1.00     0.655    0.590      0.064     0.057           meta      0.064           meta        0.66        0.59  1.000  1.000
+R2 ALIFO  on LogN  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  3 10.0     1.00     0.798    0.720      0.078     0.069           meta      0.078           meta        0.81        0.72  1.000  1.000
+R2 ALIFO  on LogN  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  6  5.0     1.00     0.650    0.377      0.273     0.266           meta      0.273           meta        0.66        0.38  1.000  1.000
+R2 ALIFO  on LogN  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2 ALIFO  on LogN  6 10.0     1.00     0.789    0.598      0.191     0.181           meta      0.191           meta        0.79        0.60  1.000  1.000
+R3 ALIFO off  Exp  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.025  0.025
+R3 ALIFO off  Exp  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.325  0.375
+R3 ALIFO off  Exp  3  5.0     1.00     0.893    0.889      0.004    -0.002  no_hysteresis      0.004  no_hysteresis        0.89        0.90  1.000  1.000
+R3 ALIFO off  Exp  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off  Exp  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off  Exp  3 10.0     1.00     0.955    0.957     -0.002    -0.007  no_hysteresis     -0.002  no_hysteresis        0.96        0.97  1.000  1.000
+R3 ALIFO off  Exp  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.025  0.025
+R3 ALIFO off  Exp  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.300  0.300
+R3 ALIFO off  Exp  6  5.0     1.00     0.893    0.889      0.003    -0.002  no_hysteresis      0.003  no_hysteresis        0.90        0.90  1.000  1.000
+R3 ALIFO off  Exp  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off  Exp  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off  Exp  6 10.0     1.00     0.957    0.955      0.001    -0.004  no_hysteresis      0.001  no_hysteresis        0.96        0.95  1.000  1.000
+R3 ALIFO off LogN  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.025  0.000
+R3 ALIFO off LogN  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.450  0.350
+R3 ALIFO off LogN  3  5.0     1.00     0.872    0.878     -0.007    -0.015  no_hysteresis     -0.007  no_hysteresis        0.88        0.89  1.000  1.000
+R3 ALIFO off LogN  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off LogN  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off LogN  3 10.0     1.00     0.947    0.950     -0.003    -0.011  no_hysteresis     -0.002  no_hysteresis        0.96        0.96  1.000  1.000
+R3 ALIFO off LogN  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.025
+R3 ALIFO off LogN  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.325  0.350
+R3 ALIFO off LogN  6  5.0     1.00     0.871    0.879     -0.008    -0.016  no_hysteresis     -0.008  no_hysteresis        0.88        0.89  1.000  1.000
+R3 ALIFO off LogN  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off LogN  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO off LogN  6 10.0     1.00     0.947    0.953     -0.006    -0.015  no_hysteresis     -0.005  no_hysteresis        0.95        0.96  1.000  1.000
+R3 ALIFO  on  Exp  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.025  0.050
+R3 ALIFO  on  Exp  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure     -0.002  no_hysteresis        1.10        1.10  1.000  1.000
+R3 ALIFO  on  Exp  3  5.0     1.00     1.000    1.000      0.000     0.000     no_failure     -0.006  no_hysteresis        1.05        1.10  1.000  1.000
+R3 ALIFO  on  Exp  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on  Exp  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on  Exp  3 10.0     1.00     1.000    1.000      0.000     0.000     no_failure     -0.011  no_hysteresis        1.05        1.10  1.000  1.000
+R3 ALIFO  on  Exp  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.025  0.075
+R3 ALIFO  on  Exp  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure     -0.004  no_hysteresis        1.10        1.10  1.000  1.000
+R3 ALIFO  on  Exp  6  5.0     1.00     1.000    1.000      0.000     0.000     no_failure     -0.004  no_hysteresis        1.05        1.05  1.000  1.000
+R3 ALIFO  on  Exp  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on  Exp  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on  Exp  6 10.0     1.00     1.000    1.000      0.000     0.000     no_failure     -0.006  no_hysteresis        1.05        1.10  1.000  1.000
+R3 ALIFO  on LogN  3  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.025  0.025
+R3 ALIFO  on LogN  3  5.0     0.75     1.000    1.000      0.000     0.000     no_failure     -0.035  no_hysteresis        1.10        1.15  1.000  1.000
+R3 ALIFO  on LogN  3  5.0     1.00     1.000    1.000      0.000     0.000     no_failure     -0.020  no_hysteresis        1.10        1.15  1.000  1.000
+R3 ALIFO  on LogN  3 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on LogN  3 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on LogN  3 10.0     1.00     1.000    1.000      0.000     0.000     no_failure     -0.026  no_hysteresis        1.15        1.15  1.000  1.000
+R3 ALIFO  on LogN  6  5.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.025  0.025
+R3 ALIFO  on LogN  6  5.0     0.75     1.000    1.000      0.000     0.000     no_failure     -0.035  no_hysteresis        1.10        1.20  1.000  1.000
+R3 ALIFO  on LogN  6  5.0     1.00     1.000    1.000      0.000     0.000     no_failure     -0.022  no_hysteresis        1.15        1.15  1.000  1.000
+R3 ALIFO  on LogN  6 10.0     0.25     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on LogN  6 10.0     0.75     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3 ALIFO  on LogN  6 10.0     1.00     1.000    1.000      0.000     0.000     no_failure     -0.029  no_hysteresis        1.15        1.15  1.000  1.000
+R1  FIFO off  Exp  3  5.0     0.50     0.705    0.276      0.430     0.422           meta      0.430           meta        0.70        0.28  1.000  1.000
+R1  FIFO off  Exp  3 10.0     0.50     0.853    0.332      0.521     0.513           meta      0.521           meta        0.85        0.33  1.000  1.000
+R1  FIFO off  Exp  6  5.0     0.50     0.705    0.200      0.505     0.499 B_always_fails      0.505 B_always_fails        0.70        0.20  1.000  1.000
+R1  FIFO off  Exp  6 10.0     0.50     0.853    0.211      0.641     0.633           meta      0.641           meta        0.85        0.22  1.000  1.000
+R1  FIFO off LogN  3  5.0     0.50     0.645    0.304      0.342     0.334           meta      0.342           meta        0.65        0.31  1.000  1.000
+R1  FIFO off LogN  3 10.0     0.50     0.783    0.441      0.342     0.331           meta      0.342           meta        0.79        0.44  1.000  1.000
+R1  FIFO off LogN  6  5.0     0.50     0.645    0.200      0.445     0.437 B_always_fails      0.445 B_always_fails        0.65        0.20  1.000  1.000
+R1  FIFO off LogN  6 10.0     0.50     0.783    0.313      0.470     0.461           meta      0.470           meta        0.79        0.31  1.000  1.000
+R1  FIFO  on  Exp  3  5.0     0.50     0.705    0.536      0.169     0.162           meta      0.169           meta        0.70        0.54  1.000  1.000
+R1  FIFO  on  Exp  3 10.0     0.50     0.853    0.595      0.258     0.250           meta      0.258           meta        0.85        0.59  1.000  1.000
+R1  FIFO  on  Exp  6  5.0     0.50     0.705    0.379      0.326     0.319           meta      0.326           meta        0.70        0.38  1.000  1.000
+R1  FIFO  on  Exp  6 10.0     0.50     0.853    0.519      0.334     0.326           meta      0.334           meta        0.85        0.52  1.000  1.000
+R1  FIFO  on LogN  3  5.0     0.50     0.658    0.618      0.040     0.033           meta      0.040           meta        0.66        0.62  1.000  1.000
+R1  FIFO  on LogN  3 10.0     0.50     0.804    0.760      0.044     0.035           meta      0.044           meta        0.80        0.76  1.000  1.000
+R1  FIFO  on LogN  6  5.0     0.50     0.652    0.470      0.182     0.174           meta      0.182           meta        0.66        0.45  1.000  1.000
+R1  FIFO  on LogN  6 10.0     0.50     0.794    0.699      0.095     0.086           meta      0.095           meta        0.80        0.71  1.000  1.000
+R2  FIFO off  Exp  3  5.0     0.50     0.704    0.277      0.427     0.420           meta      0.427           meta        0.70        0.28  1.000  1.000
+R2  FIFO off  Exp  3 10.0     0.50     0.853    0.331      0.522     0.513           meta      0.521           meta        0.85        0.33  1.000  1.000
+R2  FIFO off  Exp  6  5.0     0.50     0.704    0.200      0.504     0.496 B_always_fails      0.504 B_always_fails        0.70        0.20  1.000  1.000
+R2  FIFO off  Exp  6 10.0     0.50     0.853    0.200      0.653     0.646 B_always_fails      0.653 B_always_fails        0.85        0.20  1.000  1.000
+R2  FIFO off LogN  3  5.0     0.50     0.643    0.302      0.341     0.333           meta      0.341           meta        0.65        0.31  1.000  1.000
+R2  FIFO off LogN  3 10.0     0.50     0.782    0.450      0.331     0.320           meta      0.331           meta        0.78        0.45  1.000  1.000
+R2  FIFO off LogN  6  5.0     0.50     0.643    0.200      0.443     0.436 B_always_fails      0.443 B_always_fails        0.65        0.20  1.000  1.000
+R2  FIFO off LogN  6 10.0     0.50     0.782    0.234      0.548     0.539           meta      0.548           meta        0.78        0.23  1.000  1.000
+R2  FIFO  on  Exp  3  5.0     0.50     0.704    0.521      0.182     0.175           meta      0.182           meta        0.70        0.53  1.000  1.000
+R2  FIFO  on  Exp  3 10.0     0.50     0.853    0.564      0.289     0.281           meta      0.289           meta        0.85        0.56  1.000  1.000
+R2  FIFO  on  Exp  6  5.0     0.50     0.704    0.334      0.370     0.362           meta      0.370           meta        0.70        0.33  1.000  1.000
+R2  FIFO  on  Exp  6 10.0     0.50     0.853    0.402      0.451     0.443           meta      0.451           meta        0.85        0.40  1.000  1.000
+R2  FIFO  on LogN  3  5.0     0.50     0.655    0.590      0.064     0.057           meta      0.064           meta        0.66        0.59  1.000  1.000
+R2  FIFO  on LogN  3 10.0     0.50     0.798    0.720      0.078     0.070           meta      0.078           meta        0.81        0.72  1.000  1.000
+R2  FIFO  on LogN  6  5.0     0.50     0.650    0.377      0.273     0.266           meta      0.273           meta        0.66        0.38  1.000  1.000
+R2  FIFO  on LogN  6 10.0     0.50     0.789    0.598      0.191     0.181           meta      0.191           meta        0.79        0.60  1.000  1.000
+R3  FIFO off  Exp  3  5.0     0.50     0.893    0.889      0.004    -0.002  no_hysteresis      0.004  no_hysteresis        0.89        0.90  1.000  1.000
+R3  FIFO off  Exp  3 10.0     0.50     0.955    0.957     -0.002    -0.007  no_hysteresis     -0.002  no_hysteresis        0.96        0.97  1.000  1.000
+R3  FIFO off  Exp  6  5.0     0.50     0.893    0.889      0.003    -0.002  no_hysteresis      0.003  no_hysteresis        0.90        0.90  1.000  1.000
+R3  FIFO off  Exp  6 10.0     0.50     0.957    0.955      0.001    -0.004  no_hysteresis      0.001  no_hysteresis        0.96        0.95  1.000  1.000
+R3  FIFO off LogN  3  5.0     0.50     0.872    0.878     -0.007    -0.015  no_hysteresis     -0.007  no_hysteresis        0.88        0.89  1.000  1.000
+R3  FIFO off LogN  3 10.0     0.50     0.947    0.950     -0.003    -0.011  no_hysteresis     -0.002  no_hysteresis        0.96        0.96  1.000  1.000
+R3  FIFO off LogN  6  5.0     0.50     0.871    0.879     -0.008    -0.016  no_hysteresis     -0.008  no_hysteresis        0.88        0.89  1.000  1.000
+R3  FIFO off LogN  6 10.0     0.50     0.947    0.953     -0.006    -0.015  no_hysteresis     -0.005  no_hysteresis        0.95        0.96  1.000  1.000
+R3  FIFO  on  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure     -0.006  no_hysteresis        1.05        1.10  1.000  1.000
+R3  FIFO  on  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure     -0.006  no_hysteresis        1.05        1.06  1.000  1.000
+R3  FIFO  on  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure     -0.004  no_hysteresis        1.05        1.05  1.000  1.000
+R3  FIFO  on  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure     -0.006  no_hysteresis        1.05        1.10  1.000  1.000
+R3  FIFO  on LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure     -0.020  no_hysteresis        1.10        1.15  1.000  1.000
+R3  FIFO  on LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure     -0.024  no_hysteresis        1.12        1.14  1.000  1.000
+R3  FIFO  on LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure     -0.022  no_hysteresis        1.15        1.15  1.000  1.000
+R3  FIFO  on LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure     -0.029  no_hysteresis        1.15        1.15  1.000  1.000
+R1  LIFO off  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO off  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO off  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO off  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO off LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO off LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO off LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO off LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO  on  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO  on  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO  on  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO  on  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO  on LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO  on LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO  on LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R1  LIFO  on LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO off  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO off  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO off  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO off  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO off LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO off LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO off LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO off LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO  on  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO  on  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO  on  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO  on  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO  on LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO  on LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO  on LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R2  LIFO  on LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO off  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO off  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO off  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO off  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO off LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO off LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO off LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO off LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO  on  Exp  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO  on  Exp  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO  on  Exp  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO  on  Exp  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO  on LogN  3  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO  on LogN  3 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO  on LogN  6  5.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000
+R3  LIFO  on LogN  6 10.0     0.50     1.000    1.000      0.000     0.000     no_failure      0.000     no_failure         NaN         NaN  0.000  0.000

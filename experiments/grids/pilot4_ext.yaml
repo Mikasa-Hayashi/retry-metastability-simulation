@@ -1,0 +1,16 @@
+# Часть 4, п. 2: расширенная область перегрузки, ρ = 1,05 и 1,1…2,5 шаг 0,1
+stage: pilot
+tag: p4_ext
+seed_mode: crn
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+sweep:
+  R: [R0, R1, R2, R3]
+  Q: [FIFO, LIFO, ALIFO]
+  D: ["off", "on"]
+  S: [Exp, LogN, Pareto]
+rho_parts:
+  - {start: 1.05, stop: 1.05, step: 0.05}
+  - {start: 1.10, stop: 2.50, step: 0.10}
+protocols: [A, B]
+replicates: 40

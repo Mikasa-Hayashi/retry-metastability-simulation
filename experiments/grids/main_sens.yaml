@@ -1,0 +1,26 @@
+# Чувствительность (PREREGISTRATION п. 5): 12 активных ячеек x 10 вариантов (одна переменная за раз), R = 40
+# Сила триггера x0,5 и x1,5 понимается как масштабирование превышения (m_s - 1) = 0,5: m_s = 1,25 и 1,75 (как в pilot);
+# B от триггера не зависит, поэтому для триггера только протокол A. База (m_s = 1,5 и т.д.) берётся из m_scr/m_r100.
+stage: main
+tag: m_sens
+base_config: configs/base_r1_fifo_off_exp.yaml
+set: {proto.trigger_mult: 1.5, proto.trigger_len: 25.0, proto.overload_len: 1000.0}
+sweep:
+  R: [R1, R2]
+  Q: [FIFO]
+  D: ["off", "on"]
+  S: [Exp, LogN, Pareto]
+variants:
+  - {name: theta03, set: {proto.theta: 0.3}, protocols: [A, B]}
+  - {name: theta07, set: {proto.theta: 0.7}, protocols: [A, B]}
+  - {name: T5, set: {T: 5.0}, protocols: [A, B]}
+  - {name: T20, set: {T: 20.0}, protocols: [A, B]}
+  - {name: K64, set: {K: 64}, protocols: [A, B]}
+  - {name: K256, set: {K: 256}, protocols: [A, B]}
+  - {name: hrec3000, set: {proto.h_rec: 3000.0}, protocols: [A, B]}
+  - {name: hrec6000, set: {proto.h_rec: 6000.0}, protocols: [A, B]}
+  - {name: trg125, set: {proto.trigger_mult: 1.25}, protocols: [A]}
+  - {name: trg175, set: {proto.trigger_mult: 1.75}, protocols: [A]}
+rho_parts:
+  - {start: 0.20, stop: 1.00, step: 0.05}
+replicates: 40
