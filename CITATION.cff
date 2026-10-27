@@ -4,6 +4,7 @@ title: "Имитационное исследование ширины обла�
 authors:
   - family-names: "Мащенко"
     given-names: "Иван Денисович"
+    orcid: "https://orcid.org/0009-0008-1519-8597"
     affiliation: "Волгоградский государственный технический университет"
 license: MIT
 repository-code: "https://github.com/Mikasa-Hayashi/retry-metastability-simulation"
