@@ -1,4 +1,4 @@
-# Воспроизведение таблиц (results/analysis/) и графиков (figures/) из сырых данных results/raw/ (seed >= 1000000).
+﻿# Воспроизведение таблиц (results/analysis/) и графиков (figures/) из сырых данных results/raw/ (seed >= 1000000).
 # Использование: powershell -File reproduce.ps1   (интерпретатор: .venv\Scripts\python.exe, либо $env:PY)
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
